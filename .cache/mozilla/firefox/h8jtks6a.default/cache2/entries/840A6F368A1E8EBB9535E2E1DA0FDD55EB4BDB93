@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoBW1YeX1db","queueTime":0,"applicationTime":553,"ttGuid":"","agentToken":null,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+
+  <title>Git - git-commit Documentation</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-65ca8280a031499ee9e8e2b10c8a596c.css" />
+  <script src="/assets/modernizr-10d8d48497292341fc1c4a63d06c6f61.js"></script>
+<script src="/assets/modernizr-tests-0e26a9afd9c6455a99b7b4165485c366.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>fast-version-control
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+
+</header>
+
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+  </nav>
+</aside>
+        <div id="content">
+          
+
+  <div id='reference-version'>
+    <a class="dropdown-trigger" id="reference-topics-trigger" data-panel-id="topics-dropdown" href="#">Topics ‚ñæ</a>
+<div class='dropdown-panel right' id='topics-dropdown'>
+  <div class='three-column'>
+    <div class='column-left'>
+      <h3 class='setup'>Setup and Config</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-config">config</a></li>
+  <li><a href="/docs/git-help">help</a></li>
+</ul>
+
+      <h3 class='projects'>Getting and Creating Projects</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-init">init</a></li>
+  <li><a href="/docs/git-clone">clone</a></li>
+</ul>
+
+      <h3 class='snapshotting'>Basic Snapshotting</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-add">add</a></li>
+  <li><a href="/docs/git-status">status</a></li>
+  <li><a href="/docs/git-diff">diff</a></li>
+  <li><a href="/docs/git-commit">commit</a></li>
+  <li><a href="/docs/git-reset">reset</a></li>
+  <li><a href="/docs/git-rm">rm</a></li>
+  <li><a href="/docs/git-mv">mv</a></li>
+</ul>
+
+      <h3 class='branching'>Branching and Merging</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-branch">branch</a></li>
+  <li><a href="/docs/git-checkout">checkout</a></li>
+  <li><a href="/docs/git-merge">merge</a></li>
+  <li><a href="/docs/git-mergetool">mergetool</a></li>
+  <li><a href="/docs/git-log">log</a></li>
+  <li><a href="/docs/git-stash">stash</a></li>
+  <li><a href="/docs/git-tag">tag</a></li>
+</ul>
+
+      <h3 class='sharing'>Sharing and Updating Projects</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-fetch">fetch</a></li>
+  <li><a href="/docs/git-pull">pull</a></li>
+  <li><a href="/docs/git-push">push</a></li>
+  <li><a href="/docs/git-remote">remote</a></li>
+  <li><a href="/docs/git-submodule">submodule</a></li>
+</ul>
+
+    </div>
+    <div class='column-middle'>
+      <h3 class='inspection'>Inspection and Comparison</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-show">show</a></li>
+  <li><a href="/docs/git-log">log</a></li>
+  <li><a href="/docs/git-diff">diff</a></li>
+  <li><a href="/docs/git-shortlog">shortlog</a></li>
+  <li><a href="/docs/git-describe">describe</a></li>
+</ul>
+
+      <h3 class='patching'>Patching</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-apply">apply</a></li>
+  <li><a href="/docs/git-cherry-pick">cherry-pick</a></li>
+  <li><a href="/docs/git-diff">diff</a></li>
+  <li><a href="/docs/git-rebase">rebase</a></li>
+  <li><a href="/docs/git-revert">revert</a></li>
+</ul>
+
+      <h3 class='debugging'>Debugging</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-bisect">bisect</a></li>
+  <li><a href="/docs/git-blame">blame</a></li>
+  <li><a href="/docs/git-grep">grep</a></li>
+</ul>
+
+      <h3 class='email'>Email</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-am">am</a></li>
+  <li><a href="/docs/git-apply">apply</a></li>
+  <li><a href="/docs/git-format-patch">format-patch</a></li>
+  <li><a href="/docs/git-send-email">send-email</a></li>
+  <li><a href="/docs/git-request-pull">request-pull</a></li>
+</ul>
+
+      <h3 class='external'>External Systems</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-svn">svn</a></li>
+  <li><a href="/docs/git-fast-import">fast-import</a></li>
+</ul>
+
+    </div>
+    <div class='column-right'>
+      <h3 class='admin'>Administration</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-clean">clean</a></li>
+  <li><a href="/docs/git-gc">gc</a></li>
+  <li><a href="/docs/git-fsck">fsck</a></li>
+  <li><a href="/docs/git-reflog">reflog</a></li>
+  <li><a href="/docs/git-filter-branch">filter-branch</a></li>
+  <li><a href="/docs/git-instaweb">instaweb</a></li>
+  <li><a href="/docs/git-archive">archive</a></li>
+  <li><a href="/docs/git-bundle">bundle</a></li>
+</ul>
+
+      <h3 class='server-admin'>Server Admin</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-daemon">daemon</a></li>
+  <li><a href="/docs/git-update-server-info">update-server-info</a></li>
+</ul>
+
+      <h3 class='plumbing'>Plumbing Commands</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-cat-file">cat-file</a></li>
+  <li><a href="/docs/git-commit-tree">commit-tree</a></li>
+  <li><a href="/docs/git-count-objects">count-objects</a></li>
+  <li><a href="/docs/git-diff-index">diff-index</a></li>
+  <li><a href="/docs/git-for-each-ref">for-each-ref</a></li>
+  <li><a href="/docs/git-hash-object">hash-object</a></li>
+  <li><a href="/docs/git-ls-files">ls-files</a></li>
+  <li><a href="/docs/git-merge-base">merge-base</a></li>
+  <li><a href="/docs/git-read-tree">read-tree</a></li>
+  <li><a href="/docs/git-rev-list">rev-list</a></li>
+  <li><a href="/docs/git-rev-parse">rev-parse</a></li>
+  <li><a href="/docs/git-show-ref">show-ref</a></li>
+  <li><a href="/docs/git-symbolic-ref">symbolic-ref</a></li>
+  <li><a href="/docs/git-update-index">update-index</a></li>
+  <li><a href="/docs/git-update-ref">update-ref</a></li>
+  <li><a href="/docs/git-verify-pack">verify-pack</a></li>
+  <li><a href="/docs/git-write-tree">write-tree</a></li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+    <a class="dropdown-trigger" id="reference-versions-trigger" data-panel-id="previous-versions-dropdown" href="#">Version 2.9.3 ‚ñæ</a>
+<span class="light">git-commit last updated in 2.9.3</span>
+<div class='dropdown-panel left' id='previous-versions-dropdown'>
+  <header>Changes in the <strong>git-commit</strong> manual</header>
+  <ol class='reference-previous-versions'>
+        <li>
+        <a href="/docs/git-commit/2.9.3"><span class="version">2.9.3</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">08/12/16</em>
+        </a>
+        </li>
+        <li class="no-change"><span>2.9.2 no changes</span></li>
+        <li>
+        <a href="/docs/git-commit/2.9.1"><span class="version">2.9.1</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">07/11/16</em>
+        </a>
+        </li>
+        <li>
+        <a href="/docs/git-commit/2.9.0"><span class="version">2.9.0</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">06/13/16</em>
+        </a>
+        </li>
+        <li class="no-change"><span>2.7.2 &rarr; 2.8.4 no changes</span></li>
+        <li>
+        <a href="/docs/git-commit/2.7.1"><span class="version">2.7.1</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">02/05/16</em>
+        </a>
+        </li>
+        <li class="no-change"><span>2.6.3 &rarr; 2.7.0 no changes</span></li>
+        <li>
+        <a href="/docs/git-commit/2.6.2"><span class="version">2.6.2</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">10/16/15</em>
+        </a>
+        </li>
+        <li class="no-change"><span>2.5.2 &rarr; 2.6.1 no changes</span></li>
+        <li>
+        <a href="/docs/git-commit/2.5.1"><span class="version">2.5.1</span>
+          <span class="diff">
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">08/28/15</em>
+        </a>
+        </li>
+        <li>
+        <a href="/docs/git-commit/2.5.0"><span class="version">2.5.0</span>
+          <span class="diff">
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">07/27/15</em>
+        </a>
+        </li>
+        <li class="no-change"><span>2.4.10 no changes</span></li>
+        <li>
+        <a href="/docs/git-commit/2.4.9"><span class="version">2.4.9</span>
+          <span class="diff">
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">09/04/15</em>
+        </a>
+        </li>
+        <li class="no-change"><span>2.4.5 &rarr; 2.4.8 no changes</span></li>
+        <li>
+        <a href="/docs/git-commit/2.4.4"><span class="version">2.4.4</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">06/16/15</em>
+        </a>
+        </li>
+        <li>
+        <a href="/docs/git-commit/2.4.3"><span class="version">2.4.3</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">06/05/15</em>
+        </a>
+        </li>
+        <li class="no-change"><span>2.4.1 &rarr; 2.4.2 no changes</span></li>
+        <li>
+        <a href="/docs/git-commit/2.4.0"><span class="version">2.4.0</span>
+          <span class="diff">
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">04/30/15</em>
+        </a>
+        </li>
+        <li>
+        <a href="/docs/git-commit/2.3.9"><span class="version">2.3.9</span>
+          <span class="diff">
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">09/04/15</em>
+        </a>
+        </li>
+        <li class="no-change"><span>2.2.1 &rarr; 2.3.8 no changes</span></li>
+        <li>
+        <a href="/docs/git-commit/2.2.0"><span class="version">2.2.0</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">11/26/14</em>
+        </a>
+        </li>
+        <li class="no-change"><span>2.0.1 &rarr; 2.1.4 no changes</span></li>
+        <li>
+        <a href="/docs/git-commit/2.0.0"><span class="version">2.0.0</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">05/28/14</em>
+        </a>
+        </li>
+        <li class="no-change"><span>1.8.5.4 &rarr; 1.9.5 no changes</span></li>
+        <li>
+        <a href="/docs/git-commit/1.8.5.3"><span class="version">1.8.5.3</span>
+          <span class="diff">
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">01/13/14</em>
+        </a>
+        </li>
+        <li class="no-change"><span>1.8.5.1 &rarr; 1.8.5.2 no changes</span></li>
+        <li>
+        <a href="/docs/git-commit/1.8.5"><span class="version">1.8.5</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">11/27/13</em>
+        </a>
+        </li>
+        <li class="no-change"><span>1.8.3.1 &rarr; 1.8.4.5 no changes</span></li>
+        <li>
+        <a href="/docs/git-commit/1.8.3"><span class="version">1.8.3</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">05/24/13</em>
+        </a>
+        </li>
+        <li>
+        <a href="/docs/git-commit/1.8.2.3"><span class="version">1.8.2.3</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">05/09/13</em>
+        </a>
+        </li>
+        <li>
+        <a href="/docs/git-commit/1.8.2.2"><span class="version">1.8.2.2</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+          </span>
+          <em class="date">04/26/13</em>
+        </a>
+        </li>
+        <li>
+        <a href="/docs/git-commit/1.8.2.1"><span class="version">1.8.2.1</span>
+          <span class="diff">
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">04/07/13</em>
+        </a>
+        </li>
+        <li>
+        <a href="/docs/git-commit/1.8.2"><span class="version">1.8.2</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">03/13/13</em>
+        </a>
+        </li>
+        <li>
+        <a href="/docs/git-commit/1.8.1.6"><span class="version">1.8.1.6</span>
+          <span class="diff">
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">04/07/13</em>
+        </a>
+        </li>
+        <li class="no-change"><span>1.8.1.1 &rarr; 1.8.1.5 no changes</span></li>
+        <li>
+        <a href="/docs/git-commit/1.8.1"><span class="version">1.8.1</span>
+          <span class="diff">
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">12/31/12</em>
+        </a>
+        </li>
+        <li>
+        <a href="/docs/git-commit/1.8.0.3"><span class="version">1.8.0.3</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">12/27/12</em>
+        </a>
+        </li>
+        <li class="no-change"><span>1.8.0.2 no changes</span></li>
+        <li>
+        <a href="/docs/git-commit/1.8.0.1"><span class="version">1.8.0.1</span>
+          <span class="diff">
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">11/26/12</em>
+        </a>
+        </li>
+    <li>&nbsp;</li>
+    <!-- <li><a class="more" href="#">See more previous releases ‚Üí</a></li> -->
+  </ol>
+  <footer>
+    <span class="light">Check your version of git by running<br></span>
+    <strong>$</strong>
+    <input type="text" class="copyable" value="git --version" />
+  </footer>
+</div>
+
+  </div>
+
+  <div id='main'>
+    <div class="sect1">
+  <h2 id="_name">NAME</h2>
+  
+    <div class="sectionbody"><div class="paragraph">
+<p>git-commit - Record changes to the repository</p>
+</div></div>
+  
+</div>
+<div class="sect1">
+  <h2 id="_synopsis">SYNOPSIS</h2>
+  
+    <div class="sectionbody"><div class="verseblock">
+<pre class="content"><em>git commit</em> [-a | --interactive | --patch] [-s] [-v] [-u&lt;mode&gt;] [--amend]
+	   [--dry-run] [(-c | -C | --fixup | --squash) &lt;commit&gt;]
+	   [-F &lt;file&gt; | -m &lt;msg&gt;] [--reset-author] [--allow-empty]
+	   [--allow-empty-message] [--no-verify] [-e] [--author=&lt;author&gt;]
+	   [--date=&lt;date&gt;] [--cleanup=&lt;mode&gt;] [--[no-]status]
+	   [-i | -o] [-S[&lt;keyid&gt;]] [--] [&lt;file&gt;&#8230;&#8203;]</pre>
+</div></div>
+  
+</div>
+<div class="sect1">
+  <h2 id="_description">DESCRIPTION</h2>
+  
+    <div class="sectionbody"><div class="paragraph">
+<p>Stores the current contents of the index in a new commit along
+with a log message from the user describing the changes.</p>
+</div>
+<div class="paragraph">
+<p>The content to be added can be specified in several ways:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>by using <em>git add</em> to incrementally "add" changes to the
+index before using the <em>commit</em> command (Note: even modified
+files must be "added");</p>
+</li>
+<li>
+<p>by using <em>git rm</em> to remove files from the working tree
+and the index, again before using the <em>commit</em> command;</p>
+</li>
+<li>
+<p>by listing files as arguments to the <em>commit</em> command, in which
+case the commit will ignore changes staged in the index, and instead
+record the current content of the listed files (which must already
+be known to Git);</p>
+</li>
+<li>
+<p>by using the -a switch with the <em>commit</em> command to automatically
+"add" changes from all known files (i.e. all files that are already
+listed in the index) and to automatically "rm" files in the index
+that have been removed from the working tree, and then perform the
+actual commit;</p>
+</li>
+<li>
+<p>by using the --interactive or --patch switches with the <em>commit</em> command
+to decide one by one which files or hunks should be part of the commit,
+before finalizing the operation. See the &#8220;Interactive Mode&#8221; section of
+<a href='/docs/git-add'>git-add[1]</a> to learn how to operate these modes.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The <code>--dry-run</code> option can be used to obtain a
+summary of what is included by any of the above for the next
+commit by giving the same set of parameters (options and paths).</p>
+</div>
+<div class="paragraph">
+<p>If you make a commit and then find a mistake immediately after
+that, you can recover from it with <em>git reset</em>.</p>
+</div></div>
+  
+</div>
+<div class="sect1">
+  <h2 id="_options">OPTIONS</h2>
+  
+    <div class="sectionbody"><div class="dlist">
+<dl>
+<dt class="hdlist1">-a</dt>
+<dt class="hdlist1">--all</dt>
+<dd>
+<p>Tell the command to automatically stage files that have
+been modified and deleted, but new files you have not
+told Git about are not affected.</p>
+</dd>
+<dt class="hdlist1">-p</dt>
+<dt class="hdlist1">--patch</dt>
+<dd>
+<p>Use the interactive patch selection interface to chose
+which changes to commit. See <a href='/docs/git-add'>git-add[1]</a> for
+details.</p>
+</dd>
+<dt class="hdlist1">-C &lt;commit&gt;</dt>
+<dt class="hdlist1">--reuse-message=&lt;commit&gt;</dt>
+<dd>
+<p>Take an existing commit object, and reuse the log message
+and the authorship information (including the timestamp)
+when creating the commit.</p>
+</dd>
+<dt class="hdlist1">-c &lt;commit&gt;</dt>
+<dt class="hdlist1">--reedit-message=&lt;commit&gt;</dt>
+<dd>
+<p>Like <em>-C</em>, but with <code>-c</code> the editor is invoked, so that
+the user can further edit the commit message.</p>
+</dd>
+<dt class="hdlist1">--fixup=&lt;commit&gt;</dt>
+<dd>
+<p>Construct a commit message for use with <code>rebase --autosquash</code>.
+The commit message will be the subject line from the specified
+commit with a prefix of "fixup! ".  See <a href='/docs/git-rebase'>git-rebase[1]</a>
+for details.</p>
+</dd>
+<dt class="hdlist1">--squash=&lt;commit&gt;</dt>
+<dd>
+<p>Construct a commit message for use with <code>rebase --autosquash</code>.
+The commit message subject line is taken from the specified
+commit with a prefix of "squash! ".  Can be used with additional
+commit message options (<code>-m</code>/<code>-c</code>/<code>-C</code>/<code>-F</code>). See
+<a href='/docs/git-rebase'>git-rebase[1]</a> for details.</p>
+</dd>
+<dt class="hdlist1">--reset-author</dt>
+<dd>
+<p>When used with -C/-c/--amend options, or when committing after a
+a conflicting cherry-pick, declare that the authorship of the
+resulting commit now belongs to the committer. This also renews
+the author timestamp.</p>
+</dd>
+<dt class="hdlist1">--short</dt>
+<dd>
+<p>When doing a dry-run, give the output in the short-format. See
+<a href='/docs/git-status'>git-status[1]</a> for details. Implies <code>--dry-run</code>.</p>
+</dd>
+<dt class="hdlist1">--branch</dt>
+<dd>
+<p>Show the branch and tracking info even in short-format.</p>
+</dd>
+<dt class="hdlist1">--porcelain</dt>
+<dd>
+<p>When doing a dry-run, give the output in a porcelain-ready
+format. See <a href='/docs/git-status'>git-status[1]</a> for details. Implies
+<code>--dry-run</code>.</p>
+</dd>
+<dt class="hdlist1">--long</dt>
+<dd>
+<p>When doing a dry-run, give the output in a the long-format.
+Implies <code>--dry-run</code>.</p>
+</dd>
+<dt class="hdlist1">-z</dt>
+<dt class="hdlist1">--null</dt>
+<dd>
+<p>When showing <code>short</code> or <code>porcelain</code> status output, terminate
+entries in the status output with NUL, instead of LF. If no
+format is given, implies the <code>--porcelain</code> output format.</p>
+</dd>
+<dt class="hdlist1">-F &lt;file&gt;</dt>
+<dt class="hdlist1">--file=&lt;file&gt;</dt>
+<dd>
+<p>Take the commit message from the given file.  Use <em>-</em> to
+read the message from the standard input.</p>
+</dd>
+<dt class="hdlist1">--author=&lt;author&gt;</dt>
+<dd>
+<p>Override the commit author. Specify an explicit author using the
+standard <code>A U Thor &lt;author@example.com&gt;</code> format. Otherwise &lt;author&gt;
+is assumed to be a pattern and is used to search for an existing
+commit by that author (i.e. rev-list --all -i --author=&lt;author&gt;);
+the commit author is then copied from the first such commit found.</p>
+</dd>
+<dt class="hdlist1">--date=&lt;date&gt;</dt>
+<dd>
+<p>Override the author date used in the commit.</p>
+</dd>
+<dt class="hdlist1">-m &lt;msg&gt;</dt>
+<dt class="hdlist1">--message=&lt;msg&gt;</dt>
+<dd>
+<p>Use the given &lt;msg&gt; as the commit message.
+If multiple <code>-m</code> options are given, their values are
+concatenated as separate paragraphs.</p>
+</dd>
+<dt class="hdlist1">-t &lt;file&gt;</dt>
+<dt class="hdlist1">--template=&lt;file&gt;</dt>
+<dd>
+<p>When editing the commit message, start the editor with the
+contents in the given file.  The <code>commit.template</code> configuration
+variable is often used to give this option implicitly to the
+command.  This mechanism can be used by projects that want to
+guide participants with some hints on what to write in the message
+in what order.  If the user exits the editor without editing the
+message, the commit is aborted.  This has no effect when a message
+is given by other means, e.g. with the <code>-m</code> or <code>-F</code> options.</p>
+</dd>
+<dt class="hdlist1">-s</dt>
+<dt class="hdlist1">--signoff</dt>
+<dd>
+<p>Add Signed-off-by line by the committer at the end of the commit
+log message.  The meaning of a signoff depends on the project,
+but it typically certifies that committer has
+the rights to submit this work under the same license and
+agrees to a Developer Certificate of Origin
+(see <a href="http://developercertificate.org/" class="bare">http://developercertificate.org/</a> for more information).</p>
+</dd>
+<dt class="hdlist1">-n</dt>
+<dt class="hdlist1">--no-verify</dt>
+<dd>
+<p>This option bypasses the pre-commit and commit-msg hooks.
+See also <a href='/docs/githooks'>githooks[5]</a>.</p>
+</dd>
+<dt class="hdlist1">--allow-empty</dt>
+<dd>
+<p>Usually recording a commit that has the exact same tree as its
+sole parent commit is a mistake, and the command prevents you
+from making such a commit.  This option bypasses the safety, and
+is primarily for use by foreign SCM interface scripts.</p>
+</dd>
+<dt class="hdlist1">--allow-empty-message</dt>
+<dd>
+<p>Like --allow-empty this command is primarily for use by foreign
+SCM interface scripts. It allows you to create a commit with an
+empty commit message without using plumbing commands like
+<a href='/docs/git-commit-tree'>git-commit-tree[1]</a>.</p>
+</dd>
+<dt class="hdlist1">--cleanup=&lt;mode&gt;</dt>
+<dd>
+<p>This option determines how the supplied commit message should be
+cleaned up before committing.  The <em>&lt;mode&gt;</em> can be <code>strip</code>,
+<code>whitespace</code>, <code>verbatim</code>, <code>scissors</code> or <code>default</code>.</p>
+<div class="openblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">strip</dt>
+<dd>
+<p>Strip leading and trailing empty lines, trailing whitespace,
+commentary and collapse consecutive empty lines.</p>
+</dd>
+<dt class="hdlist1">whitespace</dt>
+<dd>
+<p>Same as <code>strip</code> except #commentary is not removed.</p>
+</dd>
+<dt class="hdlist1">verbatim</dt>
+<dd>
+<p>Do not change the message at all.</p>
+</dd>
+<dt class="hdlist1">scissors</dt>
+<dd>
+<p>Same as <code>whitespace</code>, except that everything from (and
+including) the line
+"<code># ------------------------ &gt;8 ------------------------</code>"
+is truncated if the message is to be edited. "<code>#</code>" can be
+customized with core.commentChar.</p>
+</dd>
+<dt class="hdlist1">default</dt>
+<dd>
+<p>Same as <code>strip</code> if the message is to be edited.
+Otherwise <code>whitespace</code>.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>The default can be changed by the <code>commit.cleanup</code> configuration
+variable (see <a href='/docs/git-config'>git-config[1]</a>).</p>
+</div>
+</dd>
+<dt class="hdlist1">-e</dt>
+<dt class="hdlist1">--edit</dt>
+<dd>
+<p>The message taken from file with <code>-F</code>, command line with
+<code>-m</code>, and from commit object with <code>-C</code> are usually used as
+the commit log message unmodified. This option lets you
+further edit the message taken from these sources.</p>
+</dd>
+<dt class="hdlist1">--no-edit</dt>
+<dd>
+<p>Use the selected commit message without launching an editor.
+For example, <code>git commit --amend --no-edit</code> amends a commit
+without changing its commit message.</p>
+</dd>
+<dt class="hdlist1">--amend</dt>
+<dd>
+<p>Replace the tip of the current branch by creating a new
+commit. The recorded tree is prepared as usual (including
+the effect of the <code>-i</code> and <code>-o</code> options and explicit
+pathspec), and the message from the original commit is used
+as the starting point, instead of an empty message, when no
+other message is specified from the command line via options
+such as <code>-m</code>, <code>-F</code>, <code>-c</code>, etc.  The new commit has the same
+parents and author as the current one (the <code>--reset-author</code>
+option can countermand this).</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>It is a rough equivalent for:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>	$ git reset --soft HEAD^
+	$ ... do something else to come up with the right tree ...
+	$ git commit -c ORIG_HEAD</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>but can be used to amend a merge commit.</p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>You should understand the implications of rewriting history if you
+amend a commit that has already been published.  (See the "RECOVERING
+FROM UPSTREAM REBASE" section in <a href='/docs/git-rebase'>git-rebase[1]</a>.)</p>
+</div>
+</dd>
+<dt class="hdlist1">--no-post-rewrite</dt>
+<dd>
+<p>Bypass the post-rewrite hook.</p>
+</dd>
+<dt class="hdlist1">-i</dt>
+<dt class="hdlist1">--include</dt>
+<dd>
+<p>Before making a commit out of staged contents so far,
+stage the contents of paths given on the command line
+as well.  This is usually not what you want unless you
+are concluding a conflicted merge.</p>
+</dd>
+<dt class="hdlist1">-o</dt>
+<dt class="hdlist1">--only</dt>
+<dd>
+<p>Make a commit by taking the updated working tree contents
+of the paths specified on the
+command line, disregarding any contents that have been
+staged for other paths. This is the default mode of operation of
+<em>git commit</em> if any paths are given on the command line,
+in which case this option can be omitted.
+If this option is specified together with <code>--amend</code>, then
+no paths need to be specified, which can be used to amend
+the last commit without committing changes that have
+already been staged.</p>
+</dd>
+<dt class="hdlist1">-u[&lt;mode&gt;]</dt>
+<dt class="hdlist1">--untracked-files[=&lt;mode&gt;]</dt>
+<dd>
+<p>Show untracked files.</p>
+<div class="paragraph">
+<p>The mode parameter is optional (defaults to <em>all</em>), and is used to
+specify the handling of untracked files; when -u is not used, the
+default is <em>normal</em>, i.e. show untracked files and directories.</p>
+</div>
+<div class="paragraph">
+<p>The possible options are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><em>no</em>     - Show no untracked files</p>
+</li>
+<li>
+<p><em>normal</em> - Shows untracked files and directories</p>
+</li>
+<li>
+<p><em>all</em>    - Also shows individual files in untracked directories.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The default can be changed using the status.showUntrackedFiles
+configuration variable documented in <a href='/docs/git-config'>git-config[1]</a>.</p>
+</div>
+</dd>
+<dt class="hdlist1">-v</dt>
+<dt class="hdlist1">--verbose</dt>
+<dd>
+<p>Show unified diff between the HEAD commit and what
+would be committed at the bottom of the commit message
+template to help the user describe the commit by reminding
+what changes the commit has.
+Note that this diff output doesn&#8217;t have its
+lines prefixed with <em>#</em>. This diff will not be a part
+of the commit message. See the <code>commit.verbose</code> configuration
+variable in <a href='/docs/git-config'>git-config[1]</a>.</p>
+<div class="paragraph">
+<p>If specified twice, show in addition the unified diff between
+what would be committed and the worktree files, i.e. the unstaged
+changes to tracked files.</p>
+</div>
+</dd>
+<dt class="hdlist1">-q</dt>
+<dt class="hdlist1">--quiet</dt>
+<dd>
+<p>Suppress commit summary message.</p>
+</dd>
+<dt class="hdlist1">--dry-run</dt>
+<dd>
+<p>Do not create a commit, but show a list of paths that are
+to be committed, paths with local changes that will be left
+uncommitted and paths that are untracked.</p>
+</dd>
+<dt class="hdlist1">--status</dt>
+<dd>
+<p>Include the output of <a href='/docs/git-status'>git-status[1]</a> in the commit
+message template when using an editor to prepare the commit
+message.  Defaults to on, but can be used to override
+configuration variable commit.status.</p>
+</dd>
+<dt class="hdlist1">--no-status</dt>
+<dd>
+<p>Do not include the output of <a href='/docs/git-status'>git-status[1]</a> in the
+commit message template when using an editor to prepare the
+default commit message.</p>
+</dd>
+<dt class="hdlist1">-S[&lt;keyid&gt;]</dt>
+<dt class="hdlist1">--gpg-sign[=&lt;keyid&gt;]</dt>
+<dd>
+<p>GPG-sign commits. The <code>keyid</code> argument is optional and
+defaults to the committer identity; if specified, it must be
+stuck to the option without a space.</p>
+</dd>
+<dt class="hdlist1">--no-gpg-sign</dt>
+<dd>
+<p>Countermand <code>commit.gpgSign</code> configuration variable that is
+set to force each and every commit to be signed.</p>
+</dd>
+<dt class="hdlist1">--</dt>
+<dd>
+<p>Do not interpret any more arguments as options.</p>
+</dd>
+<dt class="hdlist1">&lt;file&gt;&#8230;&#8203;</dt>
+<dd>
+<p>When files are given on the command line, the command
+commits the contents of the named files, without
+recording the changes already staged.  The contents of
+these files are also staged for the next commit on top
+of what have been staged before.</p>
+</dd>
+</dl>
+</div></div>
+  
+</div>
+<div class="sect1">
+  <h2 id="_date_formats">DATE FORMATS</h2>
+  
+    <div class="sectionbody"><div class="paragraph">
+<p>The <code>GIT_AUTHOR_DATE</code>, <code>GIT_COMMITTER_DATE</code> environment variables
+and the <code>--date</code> option
+support the following date formats:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Git internal format</dt>
+<dd>
+<p>It is <code>&lt;unix timestamp&gt; &lt;time zone offset&gt;</code>, where <code>&lt;unix
+timestamp&gt;</code> is the number of seconds since the UNIX epoch.
+<code>&lt;time zone offset&gt;</code> is a positive or negative offset from UTC.
+For example CET (which is 2 hours ahead UTC) is <code>+0200</code>.</p>
+</dd>
+<dt class="hdlist1">RFC 2822</dt>
+<dd>
+<p>The standard email format as described by RFC 2822, for example
+<code>Thu, 07 Apr 2005 22:13:13 +0200</code>.</p>
+</dd>
+<dt class="hdlist1">ISO 8601</dt>
+<dd>
+<p>Time and date specified by the ISO 8601 standard, for example
+<code>2005-04-07T22:13:13</code>. The parser accepts a space instead of the
+<code>T</code> character as well.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+In addition, the date part is accepted in the following formats:
+<code>YYYY.MM.DD</code>, <code>MM/DD/YYYY</code> and <code>DD.MM.YYYY</code>.
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</div></div>
+  
+</div>
+<div class="sect1">
+  <h2 id="_examples">EXAMPLES</h2>
+  
+    <div class="sectionbody"><div class="paragraph">
+<p>When recording your own work, the contents of modified files in
+your working tree are temporarily stored to a staging area
+called the "index" with <em>git add</em>.  A file can be
+reverted back, only in the index but not in the working tree,
+to that of the last commit with <code>git reset HEAD -- &lt;file&gt;</code>,
+which effectively reverts <em>git add</em> and prevents the changes to
+this file from participating in the next commit.  After building
+the state to be committed incrementally with these commands,
+<code>git commit</code> (without any pathname parameter) is used to record what
+has been staged so far.  This is the most basic form of the
+command.  An example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ edit hello.c
+$ git rm goodbye.c
+$ git add hello.c
+$ git commit</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Instead of staging files after each individual change, you can
+tell <code>git commit</code> to notice the changes to the files whose
+contents are tracked in
+your working tree and do corresponding <code>git add</code> and <code>git rm</code>
+for you.  That is, this example does the same as the earlier
+example if there is no other change in your working tree:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ edit hello.c
+$ rm goodbye.c
+$ git commit -a</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The command <code>git commit -a</code> first looks at your working tree,
+notices that you have modified hello.c and removed goodbye.c,
+and performs necessary <code>git add</code> and <code>git rm</code> for you.</p>
+</div>
+<div class="paragraph">
+<p>After staging changes to many files, you can alter the order the
+changes are recorded in, by giving pathnames to <code>git commit</code>.
+When pathnames are given, the command makes a commit that
+only records the changes made to the named paths:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ edit hello.c hello.h
+$ git add hello.c hello.h
+$ edit Makefile
+$ git commit Makefile</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This makes a commit that records the modification to <code>Makefile</code>.
+The changes staged for <code>hello.c</code> and <code>hello.h</code> are not included
+in the resulting commit.  However, their changes are not lost&#8201;&#8212;&#8201;they are still staged and merely held back.  After the above
+sequence, if you do:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ git commit</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>this second commit would record the changes to <code>hello.c</code> and
+<code>hello.h</code> as expected.</p>
+</div>
+<div class="paragraph">
+<p>After a merge (initiated by <em>git merge</em> or <em>git pull</em>) stops
+because of conflicts, cleanly merged
+paths are already staged to be committed for you, and paths that
+conflicted are left in unmerged state.  You would have to first
+check which paths are conflicting with <em>git status</em>
+and after fixing them manually in your working tree, you would
+stage the result as usual with <em>git add</em>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ git status | grep unmerged
+unmerged: hello.c
+$ edit hello.c
+$ git add hello.c</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>After resolving conflicts and staging the result, <code>git ls-files -u</code>
+would stop mentioning the conflicted path.  When you are done,
+run <code>git commit</code> to finally record the merge:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ git commit</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>As with the case to record your own changes, you can use <code>-a</code>
+option to save typing.  One difference is that during a merge
+resolution, you cannot use <code>git commit</code> with pathnames to
+alter the order the changes are committed, because the merge
+should be recorded as a single commit.  In fact, the command
+refuses to run when given pathnames (but see <code>-i</code> option).</p>
+</div></div>
+  
+</div>
+<div class="sect1">
+  <h2 id="_discussion">DISCUSSION</h2>
+  
+    <div class="sectionbody"><div class="paragraph">
+<p>Though not required, it&#8217;s a good idea to begin the commit message
+with a single short (less than 50 character) line summarizing the
+change, followed by a blank line and then a more thorough description.
+The text up to the first blank line in a commit message is treated
+as the commit title, and that title is used throughout Git.
+For example, <a href='/docs/git-format-patch'>git-format-patch[1]</a> turns a commit into email, and it uses
+the title on the Subject line and the rest of the commit in the body.</p>
+</div>
+<div class="paragraph">
+<p>Git is to some extent character encoding agnostic.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The contents of the blob objects are uninterpreted sequences
+of bytes.  There is no encoding translation at the core
+level.</p>
+</li>
+<li>
+<p>Path names are encoded in UTF-8 normalization form C. This
+applies to tree objects, the index file, ref names, as well as
+path names in command line arguments, environment variables
+and config files (<code>.git/config</code> (see <a href='/docs/git-config'>git-config[1]</a>),
+<a href='/docs/gitignore'>gitignore[5]</a>, <a href='/docs/gitattributes'>gitattributes[5]</a> and
+<a href='/docs/gitmodules'>gitmodules[5]</a>).</p>
+<div class="paragraph">
+<p>Note that Git at the core level treats path names simply as
+sequences of non-NUL bytes, there are no path name encoding
+conversions (except on Mac and Windows). Therefore, using
+non-ASCII path names will mostly work even on platforms and file
+systems that use legacy extended ASCII encodings. However,
+repositories created on such systems will not work properly on
+UTF-8-based systems (e.g. Linux, Mac, Windows) and vice versa.
+Additionally, many Git-based tools simply assume path names to
+be UTF-8 and will fail to display other encodings correctly.</p>
+</div>
+</li>
+<li>
+<p>Commit log messages are typically encoded in UTF-8, but other
+extended ASCII encodings are also supported. This includes
+ISO-8859-x, CP125x and many others, but <em>not</em> UTF-16/32,
+EBCDIC and CJK multi-byte encodings (GBK, Shift-JIS, Big5,
+EUC-x, CP9xx etc.).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Although we encourage that the commit log messages are encoded
+in UTF-8, both the core and Git Porcelain are designed not to
+force UTF-8 on projects.  If all participants of a particular
+project find it more convenient to use legacy encodings, Git
+does not forbid it.  However, there are a few things to keep in
+mind.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><em>git commit</em> and <em>git commit-tree</em> issues
+a warning if the commit log message given to it does not look
+like a valid UTF-8 string, unless you explicitly say your
+project uses a legacy encoding.  The way to say this is to
+have i18n.commitencoding in <code>.git/config</code> file, like this:</p>
+<div class="listingblock">
+<div class="content">
+<pre>[i18n]
+	commitencoding = ISO-8859-1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Commit objects created with the above setting record the value
+of <code>i18n.commitencoding</code> in its <code>encoding</code> header.  This is to
+help other people who look at them later.  Lack of this header
+implies that the commit log message is encoded in UTF-8.</p>
+</div>
+</li>
+<li>
+<p><em>git log</em>, <em>git show</em>, <em>git blame</em> and friends look at the
+<code>encoding</code> header of a commit object, and try to re-code the
+log message into UTF-8 unless otherwise specified.  You can
+specify the desired output encoding with
+<code>i18n.logoutputencoding</code> in <code>.git/config</code> file, like this:</p>
+<div class="listingblock">
+<div class="content">
+<pre>[i18n]
+	logoutputencoding = ISO-8859-1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you do not have this configuration variable, the value of
+<code>i18n.commitencoding</code> is used instead.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Note that we deliberately chose not to re-code the commit log
+message when a commit is made to force UTF-8 at the commit
+object level, because re-coding to UTF-8 is not necessarily a
+reversible operation.</p>
+</div></div>
+  
+</div>
+<div class="sect1">
+  <h2 id="_environment_and_configuration_variables">ENVIRONMENT AND CONFIGURATION VARIABLES</h2>
+  
+    <div class="sectionbody"><div class="paragraph">
+<p>The editor used to edit the commit log message will be chosen from the
+<code>GIT_EDITOR</code> environment variable, the core.editor configuration variable, the
+<code>VISUAL</code> environment variable, or the <code>EDITOR</code> environment variable (in that
+order).  See <a href='/docs/git-var'>git-var[1]</a> for details.</p>
+</div></div>
+  
+</div>
+<div class="sect1">
+  <h2 id="_hooks">HOOKS</h2>
+  
+    <div class="sectionbody"><div class="paragraph">
+<p>This command can run <code>commit-msg</code>, <code>prepare-commit-msg</code>, <code>pre-commit</code>,
+and <code>post-commit</code> hooks.  See <a href='/docs/githooks'>githooks[5]</a> for more
+information.</p>
+</div></div>
+  
+</div>
+<div class="sect1">
+  <h2 id="_files">FILES</h2>
+  
+    <div class="sectionbody"><div class="dlist">
+<dl>
+<dt class="hdlist1"><code>$GIT_DIR/COMMIT_EDITMSG</code></dt>
+<dd>
+<p>This file contains the commit message of a commit in progress.
+If <code>git commit</code> exits due to an error before creating a commit,
+any commit message that has been provided by the user (e.g., in
+an editor session) will be available in this file, but will be
+overwritten by the next invocation of <code>git commit</code>.</p>
+</dd>
+</dl>
+</div></div>
+  
+</div>
+<div class="sect1">
+  <h2 id="_see_also">SEE ALSO</h2>
+  
+    <div class="sectionbody"><div class="paragraph">
+<p><a href='/docs/git-add'>git-add[1]</a>,
+<a href='/docs/git-rm'>git-rm[1]</a>,
+<a href='/docs/git-mv'>git-mv[1]</a>,
+<a href='/docs/git-merge'>git-merge[1]</a>,
+<a href='/docs/git-commit-tree'>git-commit-tree[1]</a></p>
+</div></div>
+  
+</div>
+<div class="sect1">
+  <h2 id="_git">GIT</h2>
+  
+    <div class="sectionbody"><div class="paragraph">
+<p>Part of the <a href='/docs/git'>git[1]</a> suite</p>
+</div></div>
+  
+</div>
+  </div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-ae4fcd0fbc7a69a0676014f3b0488876.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-e26b28f4c867b7ddf80395d18c42afe3.js"></script>
+<script src="/assets/jquery.defaultvalue-fb4265b0e862acfce66a73a5131528b3.js"></script>
+<script src="/assets/session.min-84e4d7864bab5f4f7b2eafd9c1ebc0ca.js"></script>
+<script src="/assets/site-1dedb2e04243f2cda0b571c1ade66561.js"></script>
+
+    </div>
+
+</body>
+</html>
+ÚöÀ      W–wÅW–wÑ<ﬁEÆ       $    :https://git-scm.com/docs/git-commit necko:classified 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAQAAgAAAAAAAAAAAAAAAAAAAAAB4vFIJp5wRkeyPxAQ9RJGKPqbqVvKO0mKuIl8ec8o/uhmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAbfMIIG2zCCBcOgAwIBAgIQBM5VBGWSRUeKqneegdJKTDANBgkqhkiG9w0BAQsFADBwMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d3cuZGlnaWNlcnQuY29tMS8wLQYDVQQDEyZEaWdpQ2VydCBTSEEyIEhpZ2ggQXNzdXJhbmNlIFNlcnZlciBDQTAeFw0xNjA0MjMwMDAwMDBaFw0xOTA1MDExMjAwMDBaMGcxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1TYW4gRnJhbmNpc2NvMRUwEwYDVQQKEwxHaXRIdWIsIEluYy4xFDASBgNVBAMTC2dpdC1zY20uY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz9ZqXXrBcpKi+21MrnblkoqVKceEMOHzvdG8bQir0QbfQWM/R4QNsHSg4jx4QUQXfyyd74pNub/pRYhn+MBEfCbhLFGPkK52rP6493rH5yReV9apUGEuOGju7G6M2oC7gZ+9Kp9diKLSEihtEXeXGe7bvA++Q03qlfX3VaKPAS/7jFOwjZE0mZw7bG0e4hPYty6AGlAz3iXBU37bld1myqFT4Re3Wdtw1wAzCw4pgqVF5CbFWOcBVny3lOSjmG7iI81Dl8wwGY0Y+iWCVq2u0NFO0+LXkSCzZQtXKoxCBKe/BR+hc2GXDJ7c2Q1pd9wxYoduA6Y1F1mqZu/LN7tSRQIDAQABo4IDeDCCA3QwHwYDVR0jBBgwFoAUUWj/kK8CB3U8zNllZGKiErhZcjswHQYDVR0OBBYEFB88R7THv047sZJmdhmDLHjR75j0MCcGA1UdEQQgMB6CC2dpdC1zY20uY29tgg93d3cuZ2l0LXNjbS5jb20wDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjB1BgNVHR8EbjBsMDSgMqAwhi5odHRwOi8vY3JsMy5kaWdpY2VydC5jb20vc2hhMi1oYS1zZXJ2ZXItZzUuY3JsMDSgMqAwhi5odHRwOi8vY3JsNC5kaWdpY2VydC5jb20vc2hhMi1oYS1zZXJ2ZXItZzUuY3JsMEwGA1UdIARFMEMwNwYJYIZIAYb9bAEBMCowKAYIKwYBBQUHAgEWHGh0dHBzOi8vd3d3LmRpZ2ljZXJ0LmNvbS9DUFMwCAYGZ4EMAQICMIGDBggrBgEFBQcBAQR3MHUwJAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmRpZ2ljZXJ0LmNvbTBNBggrBgEFBQcwAoZBaHR0cDovL2NhY2VydHMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0U0hBMkhpZ2hBc3N1cmFuY2VTZXJ2ZXJDQS5jcnQwDAYDVR0TAQH/BAIwADCCAX8GCisGAQQB1nkCBAIEggFvBIIBawFpAHYApLkJkLQYWBSHuxOizGdwCjw1mAT5G9+443fNDsgN3BAAAAFUQ5z9twAABAMARzBFAiBai3TGkN7G+XH+O11wP7EUCVUopulrvBEJRdQYY8vV9wIhALoLCL7YASVFxauCe3OkpANaX9ZAeRoBW/yo/iekm0w8AHcAaPaY+B9kgr46jO65KB1M/HFRXWeT1ETRCmesu09P+8QAAAFUQ5z9eAAABAMASDBGAiEA9dYuSNwXsrQS7HNQFaTyabnrFA1dtWhOa3fJC+MXYLQCIQDBdBNimGIrtz22pErHlLKKD682VsgJgYWRtHZoTXgM7wB2AFYUBpov18Ls0/XhvUSyPsdGdrm8mRFcwO+UmFXWidDdAAABVEOc/qYAAAQDAEcwRQIgIdQnzG53ugunsf/gvDTyfeQ8WQILfOZC5lau8lJTLLICIQDXM69oZ1YG4CGGs9WdLgO7FnB0IQNYCgH1sAuI+PesHjANBgkqhkiG9w0BAQsFAAOCAQEAo/9FnwvBN9+FM8NSEzMP5/Q1ZTjcXZCSDyv32vHINdJ5aOR5eFaAPSr2nvHW2HU+FLo6A9CHuAfiIpF4UJtF4P/yIt9CNFEcrqZzXKkx9iF1y8uet/0vLLrXi/mtJ1EqWySh80/3XwRhBNjfyTaKR2+OFQC+F9dSNBRFTFvC23adzFh0Ahq3lXjaZBxLdxJLEYTGkPPTdpIpOA+A96nlsu9J6Bsd5p8x4jyOX8+VVb0EB6kFrjXhwG2sIZtGczKEjAgHh2Agyzcgd28mcop6WzA+2SiKGAnYCIDNUlLFjdGhWdEA3JLkhgoQFBjXMQS1uaaHXMyWBSRhqJX+jh14bMAvAAMAAAAAAQEAAA== request-method GET response-head HTTP/1.1 200 OK
+Server: Cowboy
+Date: Wed, 07 Sep 2016 20:24:35 GMT
+status: 200 OK
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+x-content-type-options: nosniff
+Content-Type: text/html; charset=utf-8
+Content-Length: 58374
+Etag: W/"7890f43d87bce3e78db1792d80fb43d2"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: f8b1a08a-ba84-4616-b1f3-2971e8c67508
+X-Runtime: 0.552505
+Strict-Transport-Security: max-age=31536000
+Via: 1.1 vegur
+ charset UTF-8 uncompressed-len 0 predictor::resource-count 21 predictor::https://git-scm.com/assets/git-scm-65ca8280a031499ee9e8e2b10c8a596c.css 1,1,1473279873,4097 predictor::https://git-scm.com/assets/modernizr-10d8d48497292341fc1c4a63d06c6f61.js 1,1,1473279873,4097 predictor::https://git-scm.com/assets/modernizr-tests-0e26a9afd9c6455a99b7b4165485c366.js 1,1,1473279873,4097 predictor::https://use.typekit.com/jsq2fql.js 1,1,1473279873,4096 predictor::https://git-scm.com/images/logo@2x.png 1,1,1473279873,4097 predictor::https://git-scm.com/images/icons/green-dot.png 1,1,1473279873,4097 predictor::https://git-scm.com/images/icons/red-dot.png 1,1,1473279873,4097 predictor::https://git-scm.com/images/icons/grey-dot.png 1,1,1473279873,4097 predictor::https://git-scm.com/assets/jquery-1.7.1.min-ae4fcd0fbc7a69a0676014f3b0488876.js 1,1,1473279873,4097 predictor::https://git-scm.com/assets/jquery-ui-1.8.18.custom.min-e26b28f4c867b7ddf80395d18c42afe3.js 1,1,1473279873,4097 predictor::https://git-scm.com/assets/jquery.defaultvalue-fb4265b0e862acfce66a73a5131528b3.js 1,1,1473279873,4097 predictor::https://git-scm.com/assets/session.min-84e4d7864bab5f4f7b2eafd9c1ebc0ca.js 1,1,1473279873,4097 predictor::https://git-scm.com/assets/site-1dedb2e04243f2cda0b571c1ade66561.js 1,1,1473279873,4097 predictor::https://git-scm.com/images/bg/body.jpg 1,1,1473279873,4096 predictor::https://git-scm.com/images/icons/search.png 1,1,1473279873,4096 predictor::https://git-scm.com/images/icons/code.png 1,1,1473279873,4096 predictor::https://www.google.com/jsapi?callback=gloader_ready 1,1,1473279873,4097 predictor::https://secure.gaug.es/track.js 1,1,1473279873,4097 predictor::https://secure.gaug.es/track.gif?h[site_id]=4f919d1df5a1f504b3000026&h[resource]=https%3A%2F%2Fgit-scm.com%2Fdocs%2Fgit-commit&h[referrer]=https%3A%2F%2Fwww.google.com%2F&h[title]=Git%20-%20git-commit%20Documentation&h[user_agent]=Mozilla%2F5.0%20(X11%3B%20Ubuntu%3B%20Linux%20x86_64%3B%20rv%3A48.0)%20Gecko%2F20100101%20Firefox%2F48.0&h[unique]=1&h[unique_hour]=1&h[unique_day]=1&h[unique_month]=1&h[unique_year]=1&h[screenx]=1366&h[browserx]=751&h[browsery]=645&timestamp=1473279876338 1,1,1473279873,4097 predictor::https://js-agent.newrelic.com/nr-974.min.js 1,1,1473279873,4096 predictor::https://bam.nr-data.net/1/20c4a8c482?a=454369&v=974.7d740e1&to=dl5cQkcLXF9XRBoBW1YeX1db&rst=2878&ref=https://git-scm.com/docs/git-commit&ap=553&be=1812&fe=904&dc=635&perf=%7B%22timing%22:%7B%22of%22:1473279873667,%22n%22:0,%22f%22:13,%22dn%22:13,%22dne%22:68,%22c%22:68,%22ce%22:68,%22rq%22:1110,%22rp%22:1715,%22rpe%22:1831,%22dl%22:1755,%22di%22:2420,%22ds%22:2446,%22de%22:2472,%22dc%22:2715,%22l%22:2715,%22le%22:2717%7D,%22navigation%22:%7B%7D%7D&jsonp=NREUM.setToken 1,1,1473279873,4097   ‰
