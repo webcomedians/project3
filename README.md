@@ -7,3 +7,8 @@ organized strategy where I can write with neat HTML syntax. I'd like to say I'm 
 CSS but would like to brush up on my skills working on media queries and layouts.
 Javascript is my greatest weakness right now - but I am excited to work with it and
 hope to get as much as I can out of this given this last project!
+
+Akvile Kiskis
+
+I believe that my strengths are in CSS. I like to make sure that my CSS is organized and I like to add in media queries to clean up the page and make it more responsive.
+My weakness is JavaScript, purely based off of the reason that I haven't practiced using it yet. I'm sure that after this project I will gain more experience.
