@@ -7,6 +7,7 @@
 
 
 
+
 Akvile Kiskis
 
 I believe that my strengths are in CSS. I like to make sure that my CSS is organized and I like to add in media queries to clean up the page and make it more responsive.
