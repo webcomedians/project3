@@ -1,3 +1,8 @@
+
+$.noConflict();
+
+(function($){
+$(document).ready(
 function getJSON(url, success) {
 
     var ud = '_' + +new Date,
@@ -17,7 +22,9 @@ function getJSON(url, success) {
 
 getJSON('https://www.mysportsfeeds.com/api/feed/sample/pull/nba/2015-2016-regular/full_game_schedule.json?', function(data){
     console.log(data);
-});  
+}); 
+
+})(jQuery); 
 
 //The comments below are overstack code for working with objects in the
 
