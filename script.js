@@ -9,7 +9,7 @@ function getJSON(url, success) {
 	$.getJSON(SportsAPI, function(json){
 		console.log("It worked");
 
-    var cityName, teamName;
+    var cityName, teamName, wins, losses, response;
    for(var i = 0; i < 15; i++){
     cityName = json.playoffteamstandings.conference[0].teamentry[i].team.City;
     teamName = json.playoffteamstandings.conference[0].teamentry[i].team.Name;
@@ -25,8 +25,29 @@ function getJSON(url, success) {
 		$.each(obj.teamentry, function(i,obj) {
 			console.log(json.playoffteamstandings.conference.teamentry);
         
-      
- 		
+   
+   $('#winloss-form').on('submit', function(event) {
+     console.log("does this work");
+    var query = $('#team').val();
+    $.get(
+      'https://www.mysportsfeeds.com/api/feed/sample/pull/nba/2015-2016-regular/playoff_team_standings.json?' + query,
+      function(data) {
+        response = ($("#team").val());
+        for(var i = 0; i < 30; i++){
+          console.log("test");
+          if (json.playoffteamstandings.conference.teamentry[i].team.Name == response){ // need to adjust because considered undefined
+            wins = json.playoffteamstandings.conference.teamentry[i].stats.Wins; // will adjust 
+            losses = json.playoffteamstandings.conference.teamentry[i].stats.Losses; // will adjust
+              $('#winloss').append( "<p>Wins: " + wins + "Losses: " + losses + "</p>"); 
+          }
+          else {
+          $('#winloss').append("<p>Make sure you entered in the team name correctly.</p>");  
+          }
+        }
+      });  
+  
+      });
+ 
 });
 });
 });
