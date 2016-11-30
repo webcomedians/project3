@@ -8,12 +8,26 @@ function getJSON(url, success) {
   console.log("once clicked");
 	$.getJSON(SportsAPI, function(json){
 		console.log("It worked");
-			
+
+    var cityName, teamName;
+   for(var i = 0; i < 15; i++){
+    cityName = json.playoffteamstandings.conference[0].teamentry[i].team.City;
+    teamName = json.playoffteamstandings.conference[0].teamentry[i].team.Name;
+    $("#Eastern").append("<li>" + cityName + " " + teamName); 
+   }
+   for(var i = 0; i < 15; i++){
+    cityName = json.playoffteamstandings.conference[1].teamentry[i].team.City;
+    teamName = json.playoffteamstandings.conference[1].teamentry[i].team.Name;
+    $("#Western").append("<li>" + cityName + " " + teamName); 
+   }
+    
 	$.each(json.playoffteamstandings.conference, function(gameNum, obj){
 		$.each(obj.teamentry, function(i,obj) {
-			console.log(obj.rank);
-			$("#data").append("<li>" + obj.team.City + " " + obj.team.Name + ", " + obj.rank+ "</li>");
-		
+			console.log(json.playoffteamstandings.conference.teamentry);
+        
+      
+ 		
+});
 });
 });
 });
@@ -21,13 +35,13 @@ function getJSON(url, success) {
 })(jQuery); 
 
 
+/*
 // I KID YOU NOT THE SCRIPT TAG WAS WRONG AND DIDNT LOAD IN JQUERY 
 //I HAVE THE STALEST FACE 11/29/2016
 	
 
 //Too much recursion error now being displayed will revisit later but it runs
 /*Old code: function getJSON(url, success) {
->>>>>>> a20ee5fe4606d76c7ad86f09da69d86ec9a845a7
 
     var ud = '_' + +new Date,
         script = document.createElement('script'),
