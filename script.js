@@ -10,6 +10,7 @@ function getJSON(url, success) {
 		console.log("It worked");
 
     var cityName, teamName, wins, losses, response;
+
    for(var i = 0; i < 15; i++){
     cityName = json.playoffteamstandings.conference[0].teamentry[i].team.City;
     teamName = json.playoffteamstandings.conference[0].teamentry[i].team.Name;
@@ -47,7 +48,7 @@ function getJSON(url, success) {
       });  
   
       });
- 
+
 });
 });
 });
