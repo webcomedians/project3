@@ -2,7 +2,7 @@ $.noConflict();
 (function($){
 $(document).ready(
 function getJSON(url, success) {
-	var SportsAPI = 'https://www.mysportsfeeds.com/api/feed/sample/pull/nba/2015-2016-regular/playoff_team_standings.json?';
+	var SportsAPI = 'https://www.mysportsfeeds.com/api/feed/sample/pull/nba/2016-2017 Regular/playoff_team_standings.json?';
 
   $(document).ready(function() {
   console.log("once clicked");
