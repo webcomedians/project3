@@ -20,7 +20,40 @@ html {
   padding: .5em; /* 24px / 16px = 1 gridline, 8px / 16x */
   background-color:#404244;
   color:#1E75FA;
+
 }
+
+h1 {
+  font-size: 1.602em;
+  padding-bottom: .5em;
+  padding-top: .5em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.424em;
+  padding-bottom: .5em;
+  padding-top: .5em;
+}
+
+p {
+  font-size: 1.125em;
+  line-height: 1em;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+h3 {
+  font-size: 1.424em;
+  padding-bottom: .5em;
+  padding-top: .5em;
+}
+
+label {
+  font-size: 1.266em;
+  padding-left: 1em;
+}
+
 /* ==== MODULAR STYLES === */
 
 /* ===== LAYOUT STYLES ===== */
