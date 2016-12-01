@@ -20,11 +20,12 @@ html {
   padding: .5em; /* 24px / 16px = 1 gridline, 8px / 16x */
   background-color:#404244;
   color:#1E75FA;
+}
 /* ==== MODULAR STYLES === */
 
 /* ===== LAYOUT STYLES ===== */
 
-img {
+img, photo {
   display: block;
   max-width: 100%;
   margin-left: auto;
