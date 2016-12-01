@@ -31,7 +31,11 @@ function getJSON(url, success) {
      console.log("does this work");
     var query = $('#team').val();
     $.get(
+<<<<<<< HEAD
       'https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017%20Regular/division_team_standings.json?teamstats=' + query,
+=======
+      'https://www.mysportsfeeds.com/api/feed/sample/pull/nba/2015-2016-regular/playoff_team_standings.json?' + query,
+>>>>>>> 2fc6d705c051697dd2925ec4554096984511036d
       function(data) {
         response = ($("#team").val());
         for(var i = 0; i < 30; i++){
@@ -48,6 +52,16 @@ function getJSON(url, success) {
       });  
   
       });
+<<<<<<< HEAD
+=======
+
+});
+});
+});
+});
+});
+})(jQuery); 
+>>>>>>> 2fc6d705c051697dd2925ec4554096984511036d
 
 });
 });
@@ -56,6 +70,7 @@ function getJSON(url, success) {
 });
 })(jQuery); 
 
+/*
 // I KID YOU NOT THE SCRIPT TAG WAS WRONG AND DIDNT LOAD IN JQUERY 
 //I HAVE THE STALEST FACE 11/29/2016
 	
@@ -77,6 +92,13 @@ function getJSON(url, success) {
     head.appendChild(script);
 
 }
+
+getJSON('https://www.mysportsfeeds.com/api/feed/sample/pull/nba/2015-2016-regular/full_game_schedule.json?', function(data){
+    console.log(data);
+}); 
+
+})(jQuery); 
+
 $(document).ready(function(){
 getJSON('https://www.mysportsfeeds.com/api/feed/sample/pull/nba/2015-2016-regular/full_game_schedule.json?'), function(data){
     JSON.parse(data);
