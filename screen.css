@@ -14,7 +14,19 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 
 /* ===== BASE STYLES ===== */
-
+html {
+  font-size: 1em; /* 16 px */
+  line-height: 1.5em; /* 24px / 16px = 1 gridline*/
+  padding: .5em; /* 24px / 16px = 1 gridline, 8px / 16x */
+  background-color:#404244;
+  color:#1E75FA;
 /* ==== MODULAR STYLES === */
 
 /* ===== LAYOUT STYLES ===== */
+
+img {
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+ }
