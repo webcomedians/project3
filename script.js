@@ -28,20 +28,12 @@ function getJSON(url, success) {
    $('#division-form').on('submit', function(event) {
      console.log("does this work");
     $.get(
-      'https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017%20Regular/division_team_standings.json?teamstats=' + query,
-      function(data) {
-
-
-      });  
+      'https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017%20Regular/division_team_standings.json?teamstats=' );
   
       });
-
-});
+      });
 });
 });
 });
 });
 })(jQuery); 
-
-
-
