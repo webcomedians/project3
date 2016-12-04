@@ -2,9 +2,24 @@ $.noConflict();
 (function($){
 $(document).ready(
 function getJSON(url, success) {
-	var SportsAPI = 'https://www.mysportsfeeds.com/api/feed/sample/pull/nba/2016-2017 Regular/playoff_team_standings.json?';
 
-  $(document).ready(function() {
+
+
+var request = $('request'),
+    username = "Connotate",
+    password = "phoenix8",
+    url = 'https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017-Regular/playoff_team_standings.json',
+    auth = "Basic " + new $(username + ":" + password).toString("base64");
+
+$(
+    {
+        url : url,
+        headers : {
+            "Authorization" : auth
+        }
+    },
+    function (error, response, body) {
+        $(document).ready(function() {
   console.log("once clicked");
 	$.getJSON(SportsAPI, function(json){
 		console.log("It worked");
@@ -31,11 +46,11 @@ function getJSON(url, success) {
      console.log("does this work");
     var query = $('#team').val();
     $.get(
-<<<<<<< HEAD
-      'https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017%20Regular/division_team_standings.json?teamstats=' + query,
-=======
-      'https://www.mysportsfeeds.com/api/feed/sample/pull/nba/2015-2016-regular/playoff_team_standings.json?' + query,
->>>>>>> 2fc6d705c051697dd2925ec4554096984511036d
+
+      'https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017-Regular/division_team_standings.json' + query,
+
+      'https://www.mysportsfeeds.com/api/feed/sample/pull/nba/2016-2017-regular/playoff_team_standings.json' + query,
+
       function(data) {
         response = ($("#team").val());
         for(var i = 0; i < 30; i++){
@@ -52,27 +67,54 @@ function getJSON(url, success) {
       });  
   
       });
-<<<<<<< HEAD
-=======
+
 
 });
 });
 });
 });
-});
-})(jQuery); 
->>>>>>> 2fc6d705c051697dd2925ec4554096984511036d
+    }
+);
 
+
+console.log("It worked");
+
+	
+/*jQuery.support.cors = true;
+$.ajax({
+    url: "https://www.mysportsfeeds.com/api/feed/sample/pull/nba/2016-2017%20Regular/playoff_team_standings.json?",
+    data: { "id":"doc1", "rows":"100" },
+    type: "GET",
+    timeout: 30000,
+    dataType: "text", // "xml", "json"
+    success: function(data) {
+        // show text reply as-is (debug)
+        alert(data);
+
+        // show xml field values (debug)
+        //alert( $(data).find("title").text() );
+
+        // loop JSON array (debug)
+        //var str="";
+        //$.each(data.items, function(i,item) {
+        //  str += item.title + "\n";
+        //});
+        //alert(str);
+    },
+    error: function(jqXHR, textStatus, ex) {
+        alert(textStatus + "," + ex + "," + jqXHR.responseText);
+    }
+});*/
+  
 });
-});
-});
-});
-});
+console.log("It worked");
 })(jQuery); 
+
+
+
 
 /*
-// I KID YOU NOT THE SCRIPT TAG WAS WRONG AND DIDNT LOAD IN JQUERY 
-//I HAVE THE STALEST FACE 11/29/2016
+
 	
 
 //Too much recursion error now being displayed will revisit later but it runs
