@@ -4,11 +4,13 @@ $(document).ready(
 function getJSON(url, success) {
 
 
+//I changed the index.html http-equiv to read our auth
+//I also got an email back from serverside which is giving us the greenlight to get around their CORS
 
 var request = $('request'),
     username = "Connotate",
     password = "phoenix8",
-    url = 'https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017-Regular/playoff_team_standings.json',
+    url = 'https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017-regular/playoff_team_standings.json?',
     auth = "Basic " + new $(username + ":" + password).toString("base64");
 
 $(
@@ -20,11 +22,15 @@ $(
     },
     function (error, response, body) {
         $(document).ready(function() {
+
+	var SportsAPI = 'https://www.mysportsfeeds.com/api/feed/sample/pull/nba/2016-2017-regular/playoff_team_standings.json?';
+  $(document).ready(function() {
+
   console.log("once clicked");
 	$.getJSON(SportsAPI, function(json){
 		console.log("It worked");
 
-    var cityName, teamName, wins, losses, response;
+    var cityName, teamName;
 
    for(var i = 0; i < 15; i++){
     cityName = json.playoffteamstandings.conference[0].teamentry[i].team.City;
@@ -39,17 +45,16 @@ $(
     
 	$.each(json.playoffteamstandings.conference, function(gameNum, obj){
 		$.each(obj.teamentry, function(i,obj) {
-			console.log(json.playoffteamstandings.conference.teamentry);
         
    
-   $('#winloss-form').on('submit', function(event) {
+   $('#division-form').on('submit', function(event) {
      console.log("does this work");
-    var query = $('#team').val();
     $.get(
 
-      'https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017-Regular/division_team_standings.json' + query,
 
-      'https://www.mysportsfeeds.com/api/feed/sample/pull/nba/2016-2017-regular/playoff_team_standings.json' + query,
+      'https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017-Regular/division_team_standings.json?' + query,
+
+      'https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017-regular/playoff_team_standings.json?' + query,
 
       function(data) {
         response = ($("#team").val());
@@ -70,16 +75,18 @@ $(
 
 
 });
-});
-});
-});
-    }
-);
+      });
+      });
 
-
+});
+});
+});   
+});
 console.log("It worked");
+})(jQuery); 
 
-	
+
+//CORS Problem Solving Graveyard Below:	
 /*jQuery.support.cors = true;
 $.ajax({
     url: "https://www.mysportsfeeds.com/api/feed/sample/pull/nba/2016-2017%20Regular/playoff_team_standings.json?",
@@ -106,9 +113,10 @@ $.ajax({
     }
 });*/
   
-});
-console.log("It worked");
-})(jQuery); 
+
+
+
+
 
 
 
@@ -149,6 +157,8 @@ getJSON('https://www.mysportsfeeds.com/api/feed/sample/pull/nba/2015-2016-regula
 	})
 });  
 });*/
+
+
 
 
 

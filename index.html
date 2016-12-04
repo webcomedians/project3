@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no"/>
+    <link rel="stylesheet" media="screen" href="./css/screen.css" />
     <title>NBA Conference Standings Fan Site</title>
     <script src="http://code.jquery.com/jquery-3.1.1.js"
         integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
@@ -15,7 +17,7 @@
     </figure>
     <section>
     <h2>NBA Conference Standings</h2>
-    <p>This site was created to learn how to implement our newly learned JavaScript knowledge in a collaborative effort. 
+    <p>This site was created to learn how to implement our newly learned JavaScript knowledge in a collaborative effort.
     We're utilizing a free sports data API to display the NBA conference standing information which you will see below this text.</p>
     </section>
       <h3>Eastern Conference Standings</h3>
@@ -23,16 +25,14 @@
       <h3>Western Conference Standings</h3>
       <ol id="Western"></ol>
     <section>
-      <p>If you want information on a specific teams wins and losses, type their name in the box below.</p>
-        <form id="winloss-form" name="winloss-form" method="get" action="#null">
-          <label for="team">Team Name:</label>
-          <input type="text" id="team" name="team" />
-          <input type="submit" id="winloss-submit" name="winloss-submit" value="Search" />
+      <p>Click the button below to view the NBA Division Standings!</p>
+        <form id="division-form" name="division-form" method="get" action="#null">
+          <input type="submit" id="division-submit" name="division-submit" value="Click Here!" />
         </form>
-        <article id="winloss"></article>
+        <article id="division"></article>
     </section>
       <footer>
         <p>Copyright © Akvile Kiskis, Isabel Jaramillo, and Jonathan Key. All rights reserved.</p>
       </footer>
   </body>
-</html>
+ </html>
