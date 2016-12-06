@@ -2,6 +2,60 @@ $.noConflict();
 (function($){
 $(document).ready(
 function getJSON(url, success) {
+console.log("Start");
+//I changed the index.html http-equiv to read our auth
+//I also got an email back from serverside which is giving us the greenlight to get around their CORS
+$.ajax({
+    url: "https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017-regular/playoff_team_standings.json?",
+    type: "GET",
+    dataType: 'json',
+    xhrFields: {
+         withCredentials: true
+    }
+});
+
+   
+        console.log("Okay This chunk of code works");
+$.ajax({
+    url: "https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017-regular/playoff_team_standings.json?",
+    type: "GET",
+    dataType: 'json',
+    xhrFields: {
+         withCredentials: true
+    }
+});
+	var SportsAPI = 'https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017-regular/playoff_team_standings.json?';
+
+console.log("calling the live API here");
+ 
+
+  console.log("And now lets hit a point in the live API");
+	$.getJSON(SportsAPI, function(json){
+		console.log("The API call is going through here");
+
+    var cityName, teamName;
+
+   for(var i = 0; i < 15; i++){
+    cityName = json.playoffteamstandings.conference[0].teamentry[i].team.City;
+    teamName = json.playoffteamstandings.conference[0].teamentry[i].team.Name;
+    $("#Eastern").append("<li>" + cityName + " " + teamName); 
+   }
+   for(var i = 0; i < 15; i++){
+    cityName = json.playoffteamstandings.conference[1].teamentry[i].team.City;
+    teamName = json.playoffteamstandings.conference[1].teamentry[i].team.Name;
+    $("#Western").append("<li>" + cityName + " " + teamName); 
+   }
+
+console.log("Displays here again, Works");
+});
+}); 
+
+})(jQuery); 
+//Below this line we can implement later on heres a simple ajax request thatll work for project3 above
+/* $.noConflict();
+(function($){
+$(document).ready(
+function getJSON(url, success) {
 
 console.log("Start");
 //I changed the index.html http-equiv to read our auth
@@ -11,7 +65,7 @@ var request = $('request'),
     username = "Connotate",
     password = "phoenix8",
     url = "https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017-regular/playoff_team_standings.json?",
-    auth = "Basic " + new $(username + ":" + password).toString("base64");
+    auth = "Basic Q29ubm90YXRlOnBob2VuaXg4" + new $(username + ":" + password).toString("base64");
 
 $(
     {
@@ -83,82 +137,7 @@ $(
 });   
 });
 console.log("It worked");
-})(jQuery); 
-
-
-//CORS Problem Solving Graveyard Below:	
-/*jQuery.support.cors = true;
-$.ajax({
-    url: "https://www.mysportsfeeds.com/api/feed/sample/pull/nba/2016-2017%20Regular/playoff_team_standings.json?",
-    data: { "id":"doc1", "rows":"100" },
-    type: "GET",
-    timeout: 30000,
-    dataType: "text", // "xml", "json"
-    success: function(data) {
-        // show text reply as-is (debug)
-        alert(data);
-
-        // show xml field values (debug)
-        //alert( $(data).find("title").text() );
-
-        // loop JSON array (debug)
-        //var str="";
-        //$.each(data.items, function(i,item) {
-        //  str += item.title + "\n";
-        //});
-        //alert(str);
-    },
-    error: function(jqXHR, textStatus, ex) {
-        alert(textStatus + "," + ex + "," + jqXHR.responseText);
-    }
-});*/
-  
-
-
-
-
-
-
-
-
-/*
-
-	
-
-//Too much recursion error now being displayed will revisit later but it runs
-/*Old code: function getJSON(url, success) {
-
-    var ud = '_' + +new Date,
-        script = document.createElement('script'),
-        head = document.getElementsByTagName('head')[0] 
-               || document.documentElement;
-
-    window[ud] = function(data) {
-        head.removeChild(script);
-        success && success(data);
-    };
-
-    script.src = url.replace('callback=?', 'callback=' + ud);
-    head.appendChild(script);
-
-}
-
-getJSON('https://www.mysportsfeeds.com/api/feed/sample/pull/nba/2015-2016-regular/full_game_schedule.json?', function(data){
-    console.log(data);
-}); 
-
-})(jQuery); 
-
-$(document).ready(function(){
-getJSON('https://www.mysportsfeeds.com/api/feed/sample/pull/nba/2015-2016-regular/full_game_schedule.json?'), function(data){
-    JSON.parse(data);
-	$.each(data.fullgameschedule.gameentry, function(gameNum,obj){
-		console.log(obj.date + " " + obj.awayTeam);
-	})
-});  
-});*/
-
-
+})(jQuery); */
 
 
 
