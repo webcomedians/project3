@@ -2,7 +2,38 @@ $.noConflict();
 (function($){
 $(document).ready(
 function getJSON(url, success) {
-	var SportsAPI = 'https://www.mysportsfeeds.com/api/feed/sample/pull/nba/2015-2016-regular/playoff_team_standings.json?';
+
+$.ajax({
+  headers: {
+  'Authorization': 'Basic ' + btoa('Connotate:phoenix8')
+},
+    xhrFields: {
+        withCredentials: true
+    },
+    
+    url: "https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017%20Regular/division_team_standings.json?teamstats="
+    
+
+/*    
+    beforeSend: function (xhr) {
+        xhr.setRequestHeader('Authorization', 'Basic ' + btoa('connotate:phoenix8'));
+    },
+    url: "https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017%20Regular/division_team_standings.json?teamstats="
+
+});
+
+$.ajax({
+    url: "https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017-regular/playoff_team_standings.json?",
+    type: "GET",
+    dataType: 'json',
+    xhrFields: {
+         withCredentials: true
+    }
+    */
+});
+
+
+	var SportsAPI = 'https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017-regular/playoff_team_standings.json';
   $(document).ready(function() {
   console.log("once clicked");
 	$.getJSON(SportsAPI, function(json){
