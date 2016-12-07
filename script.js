@@ -41,18 +41,18 @@ $.noConflict();
         }
       }
 $('#division-form').on('submit', function(event) {
-  $('division1').empty();
-  $('division2').empty();
-  $('division3').empty();
-  $('division4').empty();
-  $('division5').empty();
-  $('division6').empty();
-  $('EasternAtlantic').empty();
-  $('EasternCentral').empty();
-  $('EasternSoutheast').empty();
-  $('WesternNorthwest').empty();
-  $('WesternPacific').empty();
-  $('WesternSouthwest').empty();
+  $('#division1').empty();
+  $('#division2').empty();
+  $('#division3').empty();
+  $('#division4').empty();
+  $('#division5').empty();
+  $('#division6').empty();
+  $('#EasternAtlantic').empty();
+  $('#EasternCentral').empty();
+  $('#EasternSoutheast').empty();
+  $('#WesternNorthwest').empty();
+  $('#WesternPacific').empty();
+  $('#WesternSouthwest').empty();
       $.ajax({
         headers: {
         'Authorization': 'Basic ' + btoa('Connotate:phoenix8')
