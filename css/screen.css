@@ -50,11 +50,12 @@ h3 {
   padding-bottom: .5em;
   padding-top: .5em;
   color: white;
+  text-align: center;
 }
 
 ol {
   list-style-type: decimal;
-  padding-left: 1.5em;
+  padding-left: 5em;
 }
 
 /* ==== MODULAR STYLES === */
@@ -69,9 +70,11 @@ ol {
   padding-top: 1em;
 }
 
-#divisionSpacing{
-  padding-left: 5em; /* centered this way to keep numbers close to text */
-}
+#divisionSpacing {
+  padding-left: 1em; /* centered this way so numbers would stay with text */
+  }
+
+
 
 /* changing color for "Team name: " before text box */
 
@@ -110,34 +113,75 @@ img {
 
 /* ===== STATE STYLES ===== */
 
-  @media screen and (min-width: 20em) {
+  @media screen and (min-width: 20em) { /* 320 px */
   #copyright{
     text-align: center;
     color: white;
   }
 }
 
-  @media screen and (min-width: 37.5em) {
-  body h2 {
-    text-align: center;
+  @media screen and (min-width: 25em){ /* 400 px */
+    h2, h3 {
+      text-align: center; 
+    }
+    ol {
+      padding-left: 8em;
+    }
   }
-  p {
-    padding-left: 2em;
-    padding-right: 2em;
-    text-align: center;
+  @media screen and (min-width: 31.25em) { /* 500 px */
+    ol {
+      padding-left: 11em;
+    }
   }
-}
+  @media screen and (min-width: 37.5em) { /* 600 px */
+    ol {
+       padding-left: 14em;
 
-  @media screen and (min-width: 50em) {
+    }
+}
+  @media screen and (min-width: 43.45em) { /* 700 px */
+    ol {
+      padding-left: 17em;
+    }
+  }
+
+  @media screen and (min-width: 50em) { /* 800 px */
   body {
     background-color:#A9A9A9;
     color: #000000;
   }
-
-  p {
-    padding-left: 8em;
-    padding-right: 8em;
-    text-align: center;
-  }
+#AlignEast{
+  float: left;
+  width: 48.3333333333%;
+  padding: 0;
+} 
+#AlignWest {
+  float: right;
+  width: 48.3333333333%;
+  padding: 0;
 }
 
+#Eastern, #Western {
+  padding-left: 6em;
+}
+/* still need to fix these below, can't get alignment quite right */
+#one,  #four {
+  width: 33%;
+  padding: 0;
+  float: left;
+}
+#two , #five {
+  width: 33%;
+  padding: 0;
+  display: inline-block;
+}
+#three , #six {
+  width: 33%;
+  padding: 0;
+  float: right;
+}
+
+footer {
+  clear: both;
+}
+}
