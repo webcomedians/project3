@@ -7,11 +7,18 @@
 <link rel="stylesheet" href="//code.jquery.com/ui/1.8.10/themes/smoothness/jquery-ui.css" type="text/css">
 <script type="text/javascript" ></script>
     <title>NBA Conference Standings Fan Site</title>
+<<<<<<< HEAD
+    <script src="http://code.jquery.com/jquery-3.1.1.js"
+        integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+=======
     <script
 			  src="https://code.jquery.com/jquery-3.1.1.js"
 			  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
 			  crossorigin="anonymous"></script>
      <script src="script.js"></script>
+>>>>>>> a5aa08478fc3de9b1524cda268510f797fe23a58
   </head>
   <body>
     <h1>NBA Conference Standings Fan Site</h1>
@@ -27,12 +34,25 @@
       <ol id="Eastern"></ol>
       <h3>Western Conference Standings</h3>
       <ol id="Western"></ol>
-    <section>
+    <section id = "label">
       <p>Click the button below to view the NBA Division Standings!</p>
         <form id="division-form" name="division-form" method="get" action="#null">
           <input type="submit" id="division-submit" name="division-submit" value="Click Here!" />
         </form>
-        <article id="division"></article>
+        <article>
+          <h3 id="division1"></h3>
+          <ol id = "EasternAtlantic"></ol>
+          <h3 id="division2"></h3>
+          <ol id = "EasternCentral"></ol>
+          <h3 id="division3"></h3>
+          <ol id = "EasternSoutheast"></ol>
+          <h3 id="division4"></h3>
+          <ol id = "WesternNorthwest"></ol>
+          <h3 id="division5"></h3>
+          <ol id = "WesternPacific"></ol>
+          <h3 id="division6"></h3>
+          <ol id = "WesternSouthwest"></ol>
+        </article>
     </section>
       <footer>
         <p>Copyright © Akvile Kiskis, Isabel Jaramillo, and Jonathan Key. All rights reserved.</p>
