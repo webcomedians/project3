@@ -17,38 +17,38 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-size: 1em; /* 16 px */
   line-height: 1.5em; /* 24px / 16px = 1 gridline*/
-  padding: .5em; /* 24px / 16px = 1 gridline, 8px / 16x */
-  background-color:#404244;
-  color:#1E75FA;
-  font-family: Trebuchet MS;
+  padding: 0.5em; /* 24px / 16px = 1 gridline, 8px / 16x */
+  background-color: #404244;
+  color: #1E75FA;
+  font-family: "Trebuchet MS";
 }
 
 h1 {
   font-size: 1.602em;
-  padding-bottom: .5em;
-  padding-top: .5em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
   text-align: center;
   color: white;
 }
 
 h2 {
   font-size: 1.424em;
-  padding-bottom: .5em;
-  padding-top: .5em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
   color: white;
 }
 
 p {
   font-size: 1.125em; /* 18 px */
   line-height: 1.333em; /* 24px / 18px */
-  padding-left: .5em;
-  padding-right: .5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 h3 {
   font-size: 1.424em;
-  padding-bottom: .5em;
-  padding-top: .5em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
   color: white;
   text-align: center;
 }
@@ -61,37 +61,37 @@ ol {
 /* ==== MODULAR STYLES === */
 
 #divlabel {
-  text-align: center; 
+  text-align: center;
   padding-top: 1em;
 }
 
 #abbrCSS {
-  text-align: center; 
+  text-align: center;
   padding-top: 1em;
 }
 
 #divisionSpacing {
   padding-left: 1em; /* centered this way so numbers would stay with text */
-  }
+}
 
 /* background color for text box */
 
 #teamName {
-  background-color:#cccccc; 
+  background-color: #cccccc;
 }
 
 /* abbreviate button */
 
 #abr-submit {
-  font-family: Trebuchet MS;  
-  background-color:#cccccc; 
+  font-family: "Trebuchet MS";
+  background-color: #cccccc;
 }
 
 /* click here! button */
 
 #division-submit {
-  font-family: Trebuchet MS;  
-  background-color:#cccccc; 
+  font-family: "Trebuchet MS";
+  background-color: #cccccc;
 }
 
 /* changing color for "Team name: " before text box */
@@ -107,52 +107,50 @@ img {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
- }
+}
 
 /* ===== STATE STYLES ===== */
 
-  @media screen and (min-width: 20em) { /* 320 px */
-  #copyright{
+@media screen and (min-width: 20em) { /* 320 px */
+  #copyright {
     text-align: center;
     color: white;
   }
 }
 
-  @media screen and (min-width: 25em){ /* 400 px */
-    h2, h3 {
-      text-align: center; 
-    }
-    ol {
-      padding-left: 8em;
-    }
+@media screen and (min-width: 25em) { /* 400 px */
+  h2, h3 {
+    text-align: center;
   }
-  @media screen and (min-width: 31.25em) { /* 500 px */
-    ol {
-      padding-left: 11em;
-    }
+  ol {
+    padding-left: 8em;
   }
-  @media screen and (min-width: 37.5em) { /* 600 px */
-    ol {
-       padding-left: 14em;
-
-    }
 }
-  @media screen and (min-width: 43.45em) { /* 700 px */
-    ol {
-      padding-left: 17em;
-    }
+@media screen and (min-width: 31.25em) { /* 500 px */
+  ol {
+    padding-left: 11em;
   }
-
-  @media screen and (min-width: 51.25em) { /* 820 px */
+}
+@media screen and (min-width: 37.5em) { /* 600 px */
+  ol {
+    padding-left: 14em;
+  }
+}
+@media screen and (min-width: 43.45em) { /* 700 px */
+  ol {
+    padding-left: 17em;
+  }
+}
+@media screen and (min-width: 51.25em) { /* 820 px */
   body {
-    background-color:#A9A9A9;
+    background-color: #A9A9A9;
     color: #000000;
   }
-  #AlignEast{
+  #AlignEast {
     float: left;
     width: 48.3333333333%;
     padding: 0;
-  } 
+  }
   #AlignWest {
     float: right;
     width: 48.3333333333%;
@@ -163,13 +161,16 @@ img {
     padding-left: 6em;
   }
 
-  #EasternAtlantic, #EasternCentral, 
-  #EasternSoutheast, #WesternNorthwest,
-  #WesternPacific, #WesternSouthwest {
+  #EasternAtlantic,
+  #EasternCentral,
+  #EasternSoutheast,
+  #WesternNorthwest,
+  #WesternPacific,
+  #WesternSouthwest {
     padding-left: 7vw;
   }
 
-  #one,  #four {
+  #one, #four {
     width: 33%;
     float: left;
   }
@@ -186,26 +187,34 @@ img {
     clear: both;
   }
 }
-  @media screen and (min-width: 64em) { /* 1024 px */
-    #Eastern, #Western {
-      padding-left: 10em;
-    }
-
-    #EasternAtlantic, #EasternCentral, 
-    #EasternSoutheast, #WesternNorthwest,
-    #WesternPacific, #WesternSouthwest {
-        padding-left: 9vw;
-    }     
+@media screen and (min-width: 64em) { /* 1024 px */
+  #Eastern, #Western {
+    padding-left: 10em;
   }
-  
-  @media screen and (min-width: 90 em) { /* 1440 px */
-    #Eastern, #Western {
-      padding-left: 1em;
-    }
 
-    #EasternAtlantic, #EasternCentral, 
-    #EasternSoutheast, #WesternNorthwest,
-    #WesternPacific, #WesternSouthwest {
-        padding-left: 8vw;
-    }       
+  #EasternAtlantic,
+  #EasternCentral,
+  #EasternSoutheast,
+  #WesternNorthwest,
+  #WesternPacific,
+  #WesternSouthwest {
+    padding-left: 9vw;
+  }
+  #text {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 90em) { /* 1440 px */
+  #Eastern, #Western {
+    padding-left: 17em;
+  }
+
+  #EasternAtlantic,
+  #EasternCentral,
+  #EasternSoutheast,
+  #WesternNorthwest,
+  #WesternPacific,
+  #WesternSouthwest {
+    padding-left: 12vw;
+  }
 }
