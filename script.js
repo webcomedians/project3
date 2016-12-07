@@ -44,7 +44,8 @@ $.noConflict();
 $('#abr-form').on('submit', function(event){
   $('#results').empty();
   var input = $('#teamName').val();
-  var conID, abbr, teamName, teamCity;
+  var conID, teamName, teamCity;
+  var abbr = "Sorry, try again!";
   $.ajax({
     headers: {
       'Authorization': 'Basic ' + btoa('Connotate:phoenix8')
