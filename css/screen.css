@@ -47,12 +47,17 @@ h3 {
   padding-top: .5em;
 }
 
-label {
-  font-size: 1.266em;
+ol {
+  list-style-type: decimal;
   padding-left: 1em;
 }
 
 /* ==== MODULAR STYLES === */
+
+#label {
+  padding-left: 1em;
+  text-align: center;
+}
 
 /* ===== LAYOUT STYLES ===== */
 
