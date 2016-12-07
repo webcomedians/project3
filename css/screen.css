@@ -20,6 +20,7 @@ html {
   padding: .5em; /* 24px / 16px = 1 gridline, 8px / 16x */
   background-color:#404244;
   color:#1E75FA;
+  font-family: Trebuchet MS;
 }
 
 h1 {
@@ -27,16 +28,19 @@ h1 {
   padding-bottom: .5em;
   padding-top: .5em;
   text-align: center;
+  color: white;
 }
 
 h2 {
   font-size: 1.424em;
   padding-bottom: .5em;
   padding-top: .5em;
+  color: white;
 }
 
 p {
-  font-size: 1.125em;
+  font-size: 1.125em; /* 18 px */
+  line-height: 1.333em; /* 24px / 18px */
   padding-left: .5em;
   padding-right: .5em;
 }
@@ -45,23 +49,59 @@ h3 {
   font-size: 1.424em;
   padding-bottom: .5em;
   padding-top: .5em;
+  color: white;
 }
 
 ol {
   list-style-type: decimal;
-  padding-left: 1em;
+  padding-left: 1.5em;
 }
 
 /* ==== MODULAR STYLES === */
 
-#label {
-  padding-left: 1em;
-  text-align: center;
+#divlabel {
+  text-align: center; 
+  padding-top: 1em;
+}
+
+#abbrCSS {
+  text-align: center; 
+  padding-top: 1em;
+}
+
+#divisionSpacing{
+  padding-left: 5em; /* centered this way to keep numbers close to text */
+}
+
+/* changing color for "Team name: " before text box */
+
+label {
+  color: white;
+}
+
+/* background color for text box */
+
+#teamName {
+  background-color:#cccccc; 
+}
+
+/* abbreviate button */
+
+#abr-submit {
+  font-family: Trebuchet MS;  
+  background-color:#cccccc; 
+}
+
+/* click here! button */
+
+#division-submit {
+  font-family: Trebuchet MS;  
+  background-color:#cccccc; 
 }
 
 /* ===== LAYOUT STYLES ===== */
 
-img, photo {
+img {
   display: block;
   max-width: 100%;
   margin-left: auto;
@@ -73,6 +113,7 @@ img, photo {
   @media screen and (min-width: 20em) {
   #copyright{
     text-align: center;
+    color: white;
   }
 }
 
