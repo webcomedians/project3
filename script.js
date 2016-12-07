@@ -1,70 +1,135 @@
 $.noConflict();
 (function($){
-$(document).ready(
-function getJSON(url, success) {
+  $(document).ready(
+    function() {
+      var team;
+      var city;
+      $.ajax({
+        headers: {
+        'Authorization': 'Basic ' + btoa('Connotate:phoenix8')
+        },
+        url: "https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017-regular/playoff_team_standings.json"
+      }).done(
+        function(data) {
+          addCon(data,0,'Eastern');
+          addCon(data,1,'Western');
+         }
+      ).fail(
+        function(e) {
+          alert('Failure!');
+        }
+      ); 
 
-$.ajax({
-  headers: {
-  'Authorization': 'Basic ' + btoa('Connotate:phoenix8')
-},
-    xhrFields: {
-        withCredentials: true
-    },
-    
-    url: "https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017%20Regular/division_team_standings.json?teamstats="
-    
-
-/*    
-    beforeSend: function (xhr) {
-        xhr.setRequestHeader('Authorization', 'Basic ' + btoa('connotate:phoenix8'));
-    },
-    url: "https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017%20Regular/division_team_standings.json?teamstats="
-
-});
-
-$.ajax({
-    url: "https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017-regular/playoff_team_standings.json?",
-    type: "GET",
-    dataType: 'json',
-    xhrFields: {
-         withCredentials: true
+      addCon = function (data,conID,conName) {
+        for(var i = 0; i < 15; i++){
+          team=data.playoffteamstandings.conference[conID].teamentry[i].team.Name;
+          city=data.playoffteamstandings.conference[conID].teamentry[i].team.City;
+          if(conName==='Eastern'){
+              $('#Eastern').append(
+              '<li>'+
+              '  <p>'+city+' '+team+'</p>'+    
+              '</li>'
+            );
+          }
+          if(conName==='Western'){
+              $('#Western').append(
+              '<li>'+
+              '  <p>'+city+' '+team+'</p>'+    
+              '</li>'
+            );
+          }
+        }
+      }
+$('#division-form').on('submit', function(event) {
+      $.ajax({
+        headers: {
+        'Authorization': 'Basic ' + btoa('Connotate:phoenix8')
+        },
+        url: "https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017%20Regular/division_team_standings.json?teamstats="
+      }).done(
+        function(data) {
+          addHeaders();
+          addDiv(data, 0, 'EasternAtlantic');
+          addDiv(data, 1, 'EasternCentral');
+          addDiv(data, 2, 'EasternSoutheast');
+          addDiv(data, 3, 'WesternNorthwest');
+          addDiv(data, 4, 'WesternPacific');
+          addDiv(data, 5, 'WesternSouthwest');          
+         }
+      ).fail(
+        function(e) {
+          alert('Failure!');
+        }
+      ); 
+        addDiv = function (data, divID, divName) {
+        for(var i = 0; i < 5; i++){
+          team = data.divisionteamstandings.division[divID].teamentry[i].team.Name;
+          city = data.divisionteamstandings.division[divID].teamentry[i].team.City;
+        if(divName === "EasternAtlantic"){
+              $('#EasternAtlantic').append(
+              '<li>'+
+              '  <p>'+city+ ' '+team+'</p>'+    
+              '</li>'
+            );          
+        }
+        if(divName === "EasternCentral"){
+              $('#EasternCentral').append(
+              '<li>'+
+              '  <p>'+city+ ' '+team+'</p>'+    
+              '</li>'
+            );          
+        }
+        if(divName === "EasternSoutheast"){
+              $('#EasternSoutheast').append(
+              '<li>'+
+              '  <p>'+city+ ' '+team+'</p>'+    
+              '</li>'
+            );          
+        }
+        if(divName === "WesternNorthwest"){
+              $('#WesternNorthwest').append(
+              '<li>'+
+              '  <p>'+city+ ' '+team+'</p>'+    
+              '</li>'
+            );          
+        } 
+        if(divName === "WesternPacific"){
+              $('#WesternPacific').append(
+              '<li>'+
+              '  <p>'+city+ ' '+team+'</p>'+    
+              '</li>'
+            );          
+        }   
+        if(divName === "WesternSouthwest"){
+              $('#WesternSouthwest').append(
+              '<li>'+
+              '  <p>'+city+ ' '+team+'</p>'+    
+              '</li>'
+            );          
+        }           
+        }
+        }
+        addHeaders = function (data){
+          $('#division1').append(
+          'Eastern/Atlantic' 
+          );
+          $('#division2').append(
+          'Eastern/Central'
+          );
+          $('#division3').append(
+          'Eastern/Southeast'
+          );
+          $('#division4').append(
+          'Western/Northwest'
+          );
+          $('#division5').append(
+          'Western/Pacific'
+          );
+          $('#division6').append(
+          'Western/Southwest'
+          );
+      }
+      });
     }
-    */
-});
-
-
-	var SportsAPI = 'https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017-regular/playoff_team_standings.json';
-  $(document).ready(function() {
-  console.log("once clicked");
-	$.getJSON(SportsAPI, function(json){
-		console.log("It worked");
-
-    var cityName, teamName;
-
-   for(var i = 0; i < 15; i++){
-    cityName = json.playoffteamstandings.conference[0].teamentry[i].team.City;
-    teamName = json.playoffteamstandings.conference[0].teamentry[i].team.Name;
-    $("#Eastern").append("<li>" + cityName + " " + teamName); 
-   }
-   for(var i = 0; i < 15; i++){
-    cityName = json.playoffteamstandings.conference[1].teamentry[i].team.City;
-    teamName = json.playoffteamstandings.conference[1].teamentry[i].team.Name;
-    $("#Western").append("<li>" + cityName + " " + teamName); 
-   }
-    
-	$.each(json.playoffteamstandings.conference, function(gameNum, obj){
-		$.each(obj.teamentry, function(i,obj) {
-        
-   
-   $('#division-form').on('submit', function(event) {
-     console.log("does this work");
-    $.get(
-      'https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017%20Regular/division_team_standings.json?teamstats=' );
-  
-      });
-      });
-});
-});
-});
-});
-})(jQuery); 
+  )
+})(jQuery);
