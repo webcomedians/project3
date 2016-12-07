@@ -39,7 +39,50 @@ $.noConflict();
             );
           }
         }
+
       }
+$('#abr-form').on('submit', function(event){
+  $('#results').empty();
+  var input = $('#teamName').val();
+  var conID, abbr, teamName, teamCity;
+  $.ajax({
+    headers: {
+      'Authorization': 'Basic ' + btoa('Connotate:phoenix8')
+      },
+    url: "https://www.mysportsfeeds.com/api/feed/pull/nba/2016-2017-regular/playoff_team_standings.json"
+    })
+    .done(
+      function(data) {
+        abbreviation(data, 0);
+        abbreviation(data, 1);
+        appending(abbr);
+        }
+      ).fail(
+        function(e) {
+          alert('Failure!');
+        }
+      ); 
+    abbreviation = function (data, conID){
+      for(var i = 0; i < 15; i++) {
+        teamName = data.playoffteamstandings.conference[conID].teamentry[i].team.Name;
+      if(input === teamName ){
+        abbr = data.playoffteamstandings.conference[conID].teamentry[i].team.Abbreviation;  
+      }
+      }
+      for(var i = 0; i < 15; i++) {
+        teamCity = data.playoffteamstandings.conference[conID].teamentry[i].team.City;
+      if(input === teamCity ){
+        abbr = data.playoffteamstandings.conference[conID].teamentry[i].team.Abbreviation;  
+      }
+      }  
+    }
+    appending = function (abbr) {
+     $('#results').append(
+        '<p>Team Abbreviation: ' + abbr + '</p>'
+        );
+    }
+    event.preventDefault();
+});
 $('#division-form').on('submit', function(event) {
   $('#division1').empty();
   $('#division2').empty();
@@ -141,6 +184,7 @@ $('#division-form').on('submit', function(event) {
           'Western/Southwest'
           );
         }
+      event.preventDefault();
       });
     }
   )
