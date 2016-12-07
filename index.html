@@ -18,14 +18,15 @@
     <section>
     <h2>NBA Conference Standings</h2>
     <p>This site was created to learn how to implement our newly learned JavaScript knowledge in a collaborative effort.
-    We're utilizing a free sports data API to display the NBA conference standing information which you will see below this text.</p>
+    We're utilizing a free live sports data API to display the NBA conference standing information which you will see below this text.</p>
     </section>
       <h3>Eastern Conference Standings</h3>
       <ol id="Eastern"></ol>
       <h3>Western Conference Standings</h3>
       <ol id="Western"></ol>
-    <section>
-      <p>Type in the team name OR city below and click on the button to see its abbreviation!(Case sensitive)</p>
+    <section id = "abbrCSS">
+    <h3>Team Name Abbreviations</h3>
+      <p>Type in the team name OR city below and click on the button to see its abbreviation! (Case sensitive)</p>
       <form id="abr-form" name="abr-form" method="get" action="#null">
         <label for="teamName">Team Name:</label>
         <input type="text" id="teamName" name="teamName" />
@@ -33,11 +34,14 @@
         <article id = "results"></article>
       </form>
     </section>
-    <section id = "label">
+    <section id = "divlabel">
+    <h3>Division Standings</h3>
       <p>Click the button below to view the NBA Division Standings!</p>
         <form id="division-form" name="division-form" method="get" action="#null">
           <input type="submit" id="division-submit" name="division-submit" value="Click Here!" />
         </form>
+    </section>
+    <section id = "divisionSpacing">
         <article>
           <h3 id="division1"></h3>
           <ol id = "EasternAtlantic"></ol>
