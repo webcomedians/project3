@@ -118,8 +118,7 @@ $('#division-form').on('submit', function(event) {
               '  <p>'+city+ ' '+team+'</p>'+    
               '</li>'
             );          
-        } 
-        
+        }         
         }
         }
         addHeaders = function (data){
@@ -141,7 +140,7 @@ $('#division-form').on('submit', function(event) {
           $('#division6').append(
           'Western/Southwest'
           );
-      }
+        }
       });
     }
   )
