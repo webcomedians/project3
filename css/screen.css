@@ -74,14 +74,6 @@ ol {
   padding-left: 1em; /* centered this way so numbers would stay with text */
   }
 
-
-
-/* changing color for "Team name: " before text box */
-
-label {
-  color: white;
-}
-
 /* background color for text box */
 
 #teamName {
@@ -100,6 +92,12 @@ label {
 #division-submit {
   font-family: Trebuchet MS;  
   background-color:#cccccc; 
+}
+
+/* changing color for "Team name: " before text box */
+
+label {
+  color: white;
 }
 
 /* ===== LAYOUT STYLES ===== */
@@ -145,43 +143,69 @@ img {
     }
   }
 
-  @media screen and (min-width: 50em) { /* 800 px */
+  @media screen and (min-width: 51.25em) { /* 820 px */
   body {
     background-color:#A9A9A9;
     color: #000000;
   }
-#AlignEast{
-  float: left;
-  width: 48.3333333333%;
-  padding: 0;
-} 
-#AlignWest {
-  float: right;
-  width: 48.3333333333%;
-  padding: 0;
-}
+  #AlignEast{
+    float: left;
+    width: 48.3333333333%;
+    padding: 0;
+  } 
+  #AlignWest {
+    float: right;
+    width: 48.3333333333%;
+    padding: 0;
+  }
 
-#Eastern, #Western {
-  padding-left: 6em;
-}
-/* still need to fix these below, can't get alignment quite right */
-#one,  #four {
-  width: 33%;
-  padding: 0;
-  float: left;
-}
-#two , #five {
-  width: 33%;
-  padding: 0;
-  display: inline-block;
-}
-#three , #six {
-  width: 33%;
-  padding: 0;
-  float: right;
-}
+  #Eastern, #Western {
+    padding-left: 6em;
+  }
 
-footer {
-  clear: both;
+  #EasternAtlantic, #EasternCentral, 
+  #EasternSoutheast, #WesternNorthwest,
+  #WesternPacific, #WesternSouthwest {
+    padding-left: 7vw;
+  }
+
+  #one,  #four {
+    width: 33%;
+    float: left;
+  }
+  #two , #five {
+    width: 33%;
+    display: inline-block;
+  }
+  #three , #six {
+    width: 33%;
+    float: right;
+  }
+
+  footer {
+    clear: both;
+  }
 }
+  @media screen and (min-width: 64em) { /* 1024 px */
+    #Eastern, #Western {
+      padding-left: 10em;
+    }
+
+    #EasternAtlantic, #EasternCentral, 
+    #EasternSoutheast, #WesternNorthwest,
+    #WesternPacific, #WesternSouthwest {
+        padding-left: 9vw;
+    }     
+  }
+  
+  @media screen and (min-width: 90 em) { /* 1440 px */
+    #Eastern, #Western {
+      padding-left: 1em;
+    }
+
+    #EasternAtlantic, #EasternCentral, 
+    #EasternSoutheast, #WesternNorthwest,
+    #WesternPacific, #WesternSouthwest {
+        padding-left: 8vw;
+    }       
 }
