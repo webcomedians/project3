@@ -61,20 +61,18 @@ ol {
 /* ==== MODULAR STYLES === */
 
 #divlabel {
-  text-align: center; 
+  text-align: center;
   padding-top: 1em;
 }
 
 #abbrCSS {
-  text-align: center; 
+  text-align: center;
   padding-top: 1em;
 }
 
 #divisionSpacing {
   padding-left: 1em; /* centered this way so numbers would stay with text */
   }
-
-
 
 /* changing color for "Team name: " before text box */
 
@@ -85,21 +83,21 @@ label {
 /* background color for text box */
 
 #teamName {
-  background-color:#cccccc; 
+  background-color:#cccccc;
 }
 
 /* abbreviate button */
 
 #abr-submit {
-  font-family: Trebuchet MS;  
-  background-color:#cccccc; 
+  font-family: Trebuchet MS;
+  background-color:#cccccc;
 }
 
 /* click here! button */
 
 #division-submit {
-  font-family: Trebuchet MS;  
-  background-color:#cccccc; 
+  font-family: Trebuchet MS;
+  background-color:#cccccc;
 }
 
 /* ===== LAYOUT STYLES ===== */
@@ -122,7 +120,7 @@ img {
 
   @media screen and (min-width: 25em){ /* 400 px */
     h2, h3 {
-      text-align: center; 
+      text-align: center;
     }
     ol {
       padding-left: 8em;
@@ -154,11 +152,18 @@ img {
   float: left;
   width: 48.3333333333%;
   padding: 0;
-} 
+}
+
 #AlignWest {
   float: right;
   width: 48.3333333333%;
   padding: 0;
+}
+
+section ol {
+  float: left;
+  width: 48.3333333333%;
+  padding-left: 10em;
 }
 
 #Eastern, #Western {
